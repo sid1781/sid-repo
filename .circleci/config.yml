@@ -1,4 +1,16 @@
 version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1
+workflows:
+  build:
+    jobs:
+      - cypress/install
+      - cypress/run:
+          requires:
+            - cypress/install
+          record: true
+          parallel: true
+          parallelism: 20
 steps:
       - checkout
       - run: npm install
@@ -10,3 +22,8 @@ steps:
           when: always
       - store_test_results:
           path: ~/junit
+
+      
+  
+
+          
