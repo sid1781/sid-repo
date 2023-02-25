@@ -11,4 +11,8 @@ workflows:
           record: true
           parallel: true
           parallelism: 20
+      - store_test_results:
+             path: test-results
+  
+
           
