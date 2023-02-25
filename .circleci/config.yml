@@ -1,18 +1,12 @@
 version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1
-workflows:
-  build:
-    jobs:
-      - cypress/install
-      - cypress/run:
-          requires:
-            - cypress/install
-          record: true
-          parallel: true
-          parallelism: 20
+steps:
+      - checkout
+      - run: npm install
+      - run: mkdir ~/junit
+      - run:
+          command: mocha test --reporter mocha-junit-reporter
+          environment:
+            MOCHA_FILE: ~/junit/test-results.xml
+          when: always
       - store_test_results:
-             path: test-results
-  
-
-          
+          path: ~/junit
