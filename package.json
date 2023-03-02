@@ -13,7 +13,7 @@
   "scripts": {
     "test": "npx cypress run --headed",
     "cy:parallel": "cypress-parallel -d cypress/e2e/1-getting-started/ -t 2 -s test",
-    "parallel": "cypress run --record --key=cb8959cf-2004-4eb8-b0c1-513867ab197c --ci-build-id 1  --parallel"
+    "parallel":"cypress run --record --ci-build-id 1 --key=cf1c80c6-4337-49d4-ba37-fd916507d14e --parallel"
   },
   "author": "siddeshwar",
   "license": "ISC"
