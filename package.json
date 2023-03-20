@@ -11,8 +11,8 @@
     "cypress-multi-reporters": "^1.6.2"
   },
   "scripts": {
-    "test": "npx cypress run --headed",
-    "cy:parallel": "cypress-parallel -d cypress/e2e/1-getting-started/ -t 2 -s test",
+    "test": "npx cypress run",
+    "cy:parallel": "cypress-parallel -d cypress/e2e/1-getting-started/ -t 3 -s test",
     "parallel": "cypress run --record --key=cb8959cf-2004-4eb8-b0c1-513867ab197c --ci-build-id 1  --parallel"
   },
   "author": "siddeshwar",
