@@ -1,0 +1,18 @@
+class InsuranceNoPolicyPage {
+
+    details = {
+        zeplin: () => 'zpl.io/2jqwnEm',
+        overflow: () => 'https://overflow.io/s/1NS0Y7J3/?node=6921ec61',
+    }
+
+    elements = {
+
+        pageTitle: () => cy.get('[]'),
+        iconMyPolicies : () => cy.get('[]'),
+        btnMyPolicies: () => cy.get('[]'),    
+        lnkMyPolicies: () => cy.get('[]'),
+        imgNoPolicies: () => cy.get('[]'),
+        subTxtNoPolicies : () => cy.get('[]')
+    }
+}
+export const insuranceNoPolicyPage = new InsuranceNoPolicyPage

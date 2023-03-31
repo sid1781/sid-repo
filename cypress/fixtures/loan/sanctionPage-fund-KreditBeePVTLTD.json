@@ -1,0 +1,31 @@
+{
+    "code": "200",
+    "msg": "success",
+    "model": {
+        "addKFS": "2",
+        "assignedFund": "Krazybee Services Private Limited",
+        "bankId": "0",
+        "creationTime": "2023-03-09 18:42:26",
+        "did": "KBDID20230309BZCOH184Dg811838",
+        "displayTncContent": "",
+        "displayTncContentOtpPage": "",
+        "idBack": "https://ik.imagekit.io/krazybee/v0/b/kreditbee-stage/o/tr:h-128,w-128,c-at_max/537Y72Gf7TfGEE7yLBQfSu31pkW2%2Fdocs%2FdigiAadhaarBack_BuSwJlY0Ii.jpg?alt=media\u0026token=a3b61e81-22cc-267f-2950-f8c25e870a5f",
+        "idFront": "https://ik.imagekit.io/krazybee/v0/b/kreditbee-stage/o/tr:h-128,w-128,c-at_max/537Y72Gf7TfGEE7yLBQfSu31pkW2%2Fdocs%2FdigiAadhaarFront_dY4DDLSrxH.jpg?alt=media\u0026token=b4aa317e-6500-f847-6877-19c92abb0bbd",
+        "ip": "122.185.107.110",
+        "isMandateRequired": "0",
+        "issuer": "",
+        "kbloanId": "KBST230309OXU",
+        "link": "https://kimaginary.buynsta.com/path//537Y72Gf7TfGEE7yLBQfSu31pkW2/docs/KBST230309OXU/KBDID20230309BZCOH184Dg811838.pdf",
+        "linkParams": "?page=",
+        "network": "",
+        "pan": "",
+        "preSanctionEnabled": "true",
+        "sancTotalPages": "7",
+        "sanctionDocLinkParams": "?page=",
+        "sanctionDocUrl": "https://kimaginary.buynsta.com/path//537Y72Gf7TfGEE7yLBQfSu31pkW2/docs/KBST230309OXU/SANC66b4871d-0838-cfbf-1cb3-0cd949769ee9.pdf",
+        "selfie": "https://ik.imagekit.io/krazybee/v0/b/kreditbee-stage/o/tr:h-128,w-128,c-at_max/537Y72Gf7TfGEE7yLBQfSu31pkW2%2Fdocs%2Fselfie_B4VjwcXJwl.jpeg?alt=media\u0026token=da6d651d-847b-401b-afb8-41d91565cf5e",
+        "selfieEsign": "1",
+        "totalPages": "32",
+        "vendor": "kb"
+    }
+}

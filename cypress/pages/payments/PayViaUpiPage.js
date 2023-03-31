@@ -1,0 +1,31 @@
+export class PayViaUpiPage{
+    elements={
+        lblBack:()=>cy.get('[data-cy="goBackBtn"]'),
+        pageTitle:()=>cy.get('[data-cy="BTxtInheritedTitle"]'),
+        iconHelp:()=>cy.get('[data-cy="helpImg"]'),
+        textAmountPaid:()=>cy.get('[]'),
+        valAmountPaid:()=>cy.get('[]'),
+        textUPIID:()=>cy.get('[]'),
+        inpUPIID:()=>cy.get('[data-cy="vpa"]'),
+        btnContinueMakePayment:()=>cy.contains('Continue to make payment'),
+        textUPIQR:()=>cy.get('[]'),
+        textScanQR:()=>cy.get('[]'),
+        iconGPay:()=>cy.get('[]'),
+        iconponepay:()=>cy.get('[]'),
+        iconPaytm:()=>cy.get('[]'),
+        iconBhim:()=>cy.get('[]'),
+        btnGenerateQR:()=>cy.get('[]'),
+    }
+    clickBackLabel(){
+        this.elements.lblBack().click()
+    }
+    verifyPageTitle(){
+        this.elements.pageTitle().should('be.visible')
+    }
+    enterUPIID(inpUPIID){
+        this.elements.inpUPIID.type(inpUPIID)
+    }
+    clickContinueMakePaymentButton(){
+        this.elements.btnContinueMakePayment().click()
+    }
+}

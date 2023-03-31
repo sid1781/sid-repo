@@ -1,0 +1,35 @@
+{
+	"code": "200",
+	"msg": "Success.. offers pre login shiv",
+	"model": [{
+		"Id": 114,
+		"Name": "NBFCKB1",
+		"ImageUrl": "https://ik.imagekit.io/krazybee/banner/Compliance_and_legal/banner-type_NBFC2_-kb_true_QDTBU6ocve.png",
+		"ActionLink": "/store/lendingpartners",
+		"PartnerLink": "/partner/offers",
+		"VoucherCode": "",
+		"StartTime": "2020-12-24T21:30:00+05:30",
+		"EndTime": "2021-12-25T21:30:00+05:30",
+		"Description": "",
+		"Enable": 1,
+		"PartnerImage": "",
+		"Type": "preloanBanner",
+		"priority": 1,
+		"displayCondition": "{\"state\":{\"check\":0,\"value\":\"0\"},\"isSAEligible\":{\"check\":0,\"value\":0},\"activeLoan\":{\"check\":0,\"value\":0},\"displayIfGovtIDNotIn\":{\"check\":0,\"value\":\"0,\"}}"
+	}, {
+		"Id": 115,
+		"Name": "NBFCKB2",
+		"ImageUrl": "https://ik.imagekit.io/krazybee/banner/Compliance_and_legal/banner-type_NBFC2_-kb_true_QDTBU6ocve.png",
+		"ActionLink": "/store/lendingpartners",
+		"PartnerLink": "/partner/offers",
+		"VoucherCode": "",
+		"StartTime": "2020-12-24T21:30:00+05:30",
+		"EndTime": "2021-12-25T21:30:00+05:30",
+		"Description": "",
+		"Enable": 1,
+		"PartnerImage": "",
+		"Type": "preloanBanner",
+		"priority": 1,
+		"displayCondition": "{\"state\":{\"check\":0,\"value\":\"0\"},\"isSAEligible\":{\"check\":0,\"value\":0},\"activeLoan\":{\"check\":0,\"value\":0},\"displayIfGovtIDNotIn\":{\"check\":0,\"value\":\"0,\"}}"
+	}]
+}

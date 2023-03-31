@@ -1,0 +1,23 @@
+{
+	"code": "200",
+	"msg": "Success",
+	"model": {
+		"agreementFeeGstExclusion": 1,
+		"agreementFees": "200",
+		"allFees": "113",
+		"aprAmt": 85.46,
+		"csrAprAmt": 83.9,
+		"csrPointsAprAmt": 29.59,
+		"disbursalAmount": 12307,
+		"discountDisbursalAmount": 14687,
+		"discountGst": 0,
+		"discountProcessingFees": 0,
+		"feeType": "reAssFee",
+		"gst": 380,
+		"maxUsablePoints": 0,
+		"office": "NzMxNDExMA",
+		"originalProcessingFee": 915,
+		"pointsAprAmt": 27,
+		"processingfees": 2000
+	}
+}

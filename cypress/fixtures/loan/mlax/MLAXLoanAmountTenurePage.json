@@ -1,0 +1,436 @@
+{
+    "code": "200",
+    "msg": "Success",
+    "model": {
+        "action": "getNow",
+        "actualInterestAmount": 658,
+        "actualIrr": 25,
+        "actualTenure": 6,
+        "agreementFees": 20,
+        "allFees": "113",
+        "aprInApp": true,
+        "bandPropertiesId": 1376,
+        "callingNumber": "08045144166",
+        "csr": {
+            "autoCheck": 1,
+            "fee": 50,
+            "maxDiscount": 50,
+            "priority": 2
+        },
+        "default": {
+            "doc_fees": "",
+            "emi": "Rs. 1775",
+            "gst": "Rs. 108",
+            "interest": "Rs. 651",
+            "interest_string": "Annualized Interest rate starting from 22% p.a.*",
+            "loan_amount": "Rs. 10,000",
+            "processing_fees": "Rs. 600",
+            "string": "Unlock this loan by repaying your EMIs on time",
+            "tenure": "upto 6 months"
+        },
+        "discountGst": 0,
+        "discountOnFees": false,
+        "discountOnIrr": false,
+        "discountProcessingFees": 0,
+        "discountedRepayableAmount": 0,
+        "enableEcommForIsTest": "1",
+        "feeType": "ob",
+        "foreclosureFee": {
+            "amount": "0",
+            "foreclosureMaxCap": "150",
+            "foreclosureMinCap": "30",
+            "type": "p"
+        },
+        "getReligionCaste": 0,
+        "gst": 695,
+        "higherLimitConsent": {
+            "consentId": 1,
+            "eligible": false,
+            "value": 0,
+            "engConsent": "",
+            "hinConsent": "",
+            "consentString": ""
+        },
+        "id": 6,
+        "incrementAmount": 2000,
+        "installmentSummary": null,
+        "interestAmount": 658,
+        "interestRateType": "reducing",
+        "interestString": {
+            "1": "2.083%",
+            "10": "1.176%",
+            "11": "1.168%",
+            "12": "1.163%",
+            "2": "1.541%",
+            "3": "1.384%",
+            "4": "1.300%",
+            "5": "1.255%",
+            "6": "1.222%",
+            "7": "1.204%",
+            "8": "1.192%",
+            "9": "1.180%"
+        },
+        "interestSubString": "Annualized Interest Rate: 25% p.a.",
+        "irr": 25,
+        "isCasteFilled": 0,
+        "isReligionFilled": 0,
+        "maxAmount": 15000,
+        "maxDiscountPointsPercent": 40,
+        "maxUsablePoints": 0,
+        "minAmount": 10000,
+        "name": "MLA-X",
+        "originalProcessingFee": 3360,
+        "overdueInterest": 25,
+        "pdInLoan": "disable",
+        "penaltyInfo": [
+            {
+                "From": 1,
+                "To": 1,
+                "Amt": 2,
+                "Type": "percentage"
+            },
+            {
+                "From": 2,
+                "To": 30,
+                "Amt": 0.2,
+                "Type": "percentage"
+            },
+            {
+                "From": 31,
+                "To": 90,
+                "Amt": 0.12,
+                "Type": "percentage"
+            }
+        ],
+        "penaltyProductId": 30,
+        "principalPercent": 50,
+        "processingFees": 3360,
+        "productSubString": "Repayment upto 12 months",
+        "repaymentDate": "05 Apr 2023",
+        "showCallnow": true,
+        "skipLoanPurposeScreen": true,
+        "tenure": [
+            {
+                "amount": 10000,
+                "disbursalAmount": 5425,
+                "tenureInfo": [
+                    {
+                        "actualInterest": 504,
+                        "agreementFeeGstExclusion": 1,
+                        "agreementFees": 20,
+                        "allFees": "75",
+                        "aprAmt": 66.14,
+                        "csrAprAmt": 63.24,
+                        "csrPointsAprAmt": 28.71,
+                        "disbursalAmount": 9089,
+                        "discountGst": 0,
+                        "discountOnFees": 0,
+                        "discountProcessingFees": 0,
+                        "emi": 2632,
+                        "feeType": "ob",
+                        "gst": 136,
+                        "installments": [
+                            {
+                                "dueDate": "5 Apr 2023",
+                                "interest": 188,
+                                "nextDueDate": "2023-04-05",
+                                "principal": 2444,
+                                "repayableAmount": 2632
+                            },
+                            {
+                                "dueDate": "5 May 2023",
+                                "interest": 157,
+                                "nextDueDate": "2023-05-05",
+                                "principal": 2475,
+                                "repayableAmount": 2632
+                            },
+                            {
+                                "dueDate": "5 Jun 2023",
+                                "interest": 106,
+                                "nextDueDate": "2023-06-05",
+                                "principal": 2526,
+                                "repayableAmount": 2632
+                            },
+                            {
+                                "dueDate": "5 Jul 2023",
+                                "interest": 53,
+                                "nextDueDate": "2023-07-05",
+                                "principal": 2555,
+                                "repayableAmount": 2608
+                            }
+                        ],
+                        "interest": 504,
+                        "maxUsablePoints": 0,
+                        "originalProcessingFee": 680,
+                        "pointsAprAmt": 25,
+                        "processingFees": 680,
+                        "repayableAmount": 10504,
+                        "tenure": 4,
+                        "totalRepayPeriod": 0
+                    }
+                ]
+            },
+            {
+                "amount": 12000,
+                "disbursalAmount": 7850,
+                "tenureInfo": [
+                    {
+                        "actualInterest": 605,
+                        "agreementFeeGstExclusion": 1,
+                        "agreementFees": 20,
+                        "allFees": "90",
+                        "aprAmt": 62.08,
+                        "csrAprAmt": 59.69,
+                        "csrPointsAprAmt": 28.71,
+                        "disbursalAmount": 11010,
+                        "discountGst": 0,
+                        "discountOnFees": 0,
+                        "discountProcessingFees": 0,
+                        "emi": 3158,
+                        "feeType": "ob",
+                        "gst": 148,
+                        "installments": [
+                            {
+                                "dueDate": "5 Apr 2023",
+                                "interest": 225,
+                                "nextDueDate": "2023-04-05",
+                                "principal": 2933,
+                                "repayableAmount": 3158
+                            },
+                            {
+                                "dueDate": "5 May 2023",
+                                "interest": 189,
+                                "nextDueDate": "2023-05-05",
+                                "principal": 2969,
+                                "repayableAmount": 3158
+                            },
+                            {
+                                "dueDate": "5 Jun 2023",
+                                "interest": 127,
+                                "nextDueDate": "2023-06-05",
+                                "principal": 3031,
+                                "repayableAmount": 3158
+                            },
+                            {
+                                "dueDate": "5 Jul 2023",
+                                "interest": 64,
+                                "nextDueDate": "2023-07-05",
+                                "principal": 3067,
+                                "repayableAmount": 3131
+                            }
+                        ],
+                        "interest": 605,
+                        "maxUsablePoints": 0,
+                        "originalProcessingFee": 732,
+                        "pointsAprAmt": 25,
+                        "processingFees": 732,
+                        "repayableAmount": 12605,
+                        "tenure": 4,
+                        "totalRepayPeriod": 0
+                    }
+                ]
+            },
+            {
+                "amount": 14000,
+                "disbursalAmount": 9835,
+                "tenureInfo": [
+                    {
+                        "actualInterest": 706,
+                        "agreementFeeGstExclusion": 1,
+                        "agreementFees": 20,
+                        "allFees": "105",
+                        "aprAmt": 62.09,
+                        "csrAprAmt": 60.03,
+                        "csrPointsAprAmt": 28.72,
+                        "disbursalAmount": 12848,
+                        "discountGst": 0,
+                        "discountOnFees": 0,
+                        "discountProcessingFees": 0,
+                        "emi": 3684,
+                        "feeType": "ob",
+                        "gst": 173,
+                        "installments": [
+                            {
+                                "dueDate": "5 Apr 2023",
+                                "interest": 263,
+                                "nextDueDate": "2023-04-05",
+                                "principal": 3421,
+                                "repayableAmount": 3684
+                            },
+                            {
+                                "dueDate": "5 May 2023",
+                                "interest": 220,
+                                "nextDueDate": "2023-05-05",
+                                "principal": 3464,
+                                "repayableAmount": 3684
+                            },
+                            {
+                                "dueDate": "5 Jun 2023",
+                                "interest": 148,
+                                "nextDueDate": "2023-06-05",
+                                "principal": 3536,
+                                "repayableAmount": 3684
+                            },
+                            {
+                                "dueDate": "5 Jul 2023",
+                                "interest": 75,
+                                "nextDueDate": "2023-07-05",
+                                "principal": 3579,
+                                "repayableAmount": 3654
+                            }
+                        ],
+                        "interest": 706,
+                        "maxUsablePoints": 0,
+                        "originalProcessingFee": 854,
+                        "pointsAprAmt": 25,
+                        "processingFees": 854,
+                        "repayableAmount": 14706,
+                        "tenure": 4,
+                        "totalRepayPeriod": 0
+                    }
+                ]
+            },
+            {
+                "amount": 15000,
+                "disbursalAmount": 10820,
+                "tenureInfo": [
+                    {
+                        "actualInterest": 756,
+                        "agreementFeeGstExclusion": 1,
+                        "agreementFees": 20,
+                        "allFees": "113",
+                        "aprAmt": 62.09,
+                        "csrAprAmt": 60.18,
+                        "csrPointsAprAmt": 28.72,
+                        "disbursalAmount": 13767,
+                        "discountGst": 0,
+                        "discountOnFees": 0,
+                        "discountProcessingFees": 0,
+                        "emi": 3947,
+                        "feeType": "ob",
+                        "gst": 185,
+                        "installments": [
+                            {
+                                "dueDate": "5 Apr 2023",
+                                "interest": 281,
+                                "nextDueDate": "2023-04-05",
+                                "principal": 3666,
+                                "repayableAmount": 3947
+                            },
+                            {
+                                "dueDate": "5 May 2023",
+                                "interest": 236,
+                                "nextDueDate": "2023-05-05",
+                                "principal": 3711,
+                                "repayableAmount": 3947
+                            },
+                            {
+                                "dueDate": "5 Jun 2023",
+                                "interest": 159,
+                                "nextDueDate": "2023-06-05",
+                                "principal": 3788,
+                                "repayableAmount": 3947
+                            },
+                            {
+                                "dueDate": "5 Jul 2023",
+                                "interest": 80,
+                                "nextDueDate": "2023-07-05",
+                                "principal": 3835,
+                                "repayableAmount": 3915
+                            }
+                        ],
+                        "interest": 756,
+                        "maxUsablePoints": 0,
+                        "originalProcessingFee": 915,
+                        "pointsAprAmt": 25,
+                        "processingFees": 915,
+                        "repayableAmount": 15756,
+                        "tenure": 4,
+                        "totalRepayPeriod": 0
+                    },
+                    {
+                        "actualInterest": 1077,
+                        "agreementFeeGstExclusion": 1,
+                        "agreementFees": 20,
+                        "allFees": "113",
+                        "aprAmt": 51.21,
+                        "csrAprAmt": 49.86,
+                        "csrPointsAprAmt": 27.57,
+                        "disbursalAmount": 13767,
+                        "discountGst": 0,
+                        "discountOnFees": 0,
+                        "discountProcessingFees": 0,
+                        "emi": 2685,
+                        "feeType": "ob",
+                        "gst": 185,
+                        "installments": [
+                            {
+                                "dueDate": "5 Apr 2023",
+                                "interest": 281,
+                                "nextDueDate": "2023-04-05",
+                                "principal": 2404,
+                                "repayableAmount": 2685
+                            },
+                            {
+                                "dueDate": "5 May 2023",
+                                "interest": 262,
+                                "nextDueDate": "2023-05-05",
+                                "principal": 2423,
+                                "repayableAmount": 2685
+                            },
+                            {
+                                "dueDate": "5 Jun 2023",
+                                "interest": 212,
+                                "nextDueDate": "2023-06-05",
+                                "principal": 2473,
+                                "repayableAmount": 2685
+                            },
+                            {
+                                "dueDate": "5 Jul 2023",
+                                "interest": 160,
+                                "nextDueDate": "2023-07-05",
+                                "principal": 2525,
+                                "repayableAmount": 2685
+                            },
+                            {
+                                "dueDate": "5 Aug 2023",
+                                "interest": 108,
+                                "nextDueDate": "2023-08-05",
+                                "principal": 2577,
+                                "repayableAmount": 2685
+                            },
+                            {
+                                "dueDate": "5 Sep 2023",
+                                "interest": 54,
+                                "nextDueDate": "2023-09-05",
+                                "principal": 2598,
+                                "repayableAmount": 2652
+                            }
+                        ],
+                        "interest": 1077,
+                        "maxUsablePoints": 0,
+                        "originalProcessingFee": 915,
+                        "pointsAprAmt": 25,
+                        "processingFees": 915,
+                        "repayableAmount": 16077,
+                        "tenure": 6,
+                        "totalRepayPeriod": 0
+                    }
+                ]
+            }
+        ],
+        "tenureFrequency": {
+            "Id": 108,
+            "Keyid": {
+                "id": 17,
+                "keyValue": "",
+                "description": ""
+            },
+            "Name": "productFrequency",
+            "Val": "monthly",
+            "Description": ""
+        },
+        "totalRepayPeriod": 0,
+        "type": "variable"
+    }
+}
