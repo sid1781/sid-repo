@@ -22,6 +22,7 @@ describe('business - Insurance , Purchase Loan ', () => {
         const dbip = "10.115.60.4"
         cy.visit('/login', { failOnStatusCode: false });
         cy.log('navigated to login page');
+        cy.wait(6000)
         cy.contains('span','Login/Signup with Mobile').click({ force: true });
         cy.url().should('include', '/loginwithmob/mobileform');
         cy.get('input')
