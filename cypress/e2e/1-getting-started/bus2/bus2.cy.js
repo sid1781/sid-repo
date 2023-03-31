@@ -1,105 +1,105 @@
 //loan flow
-import { homePage } from "../../pages/home/HomePage"
-import { fplPage } from "../../pages/loan/fpl/FPLPage"
-import { fplLoanAmountDetailsPage } from "../../pages/loan/fpl/FPLLoanAmountDetailsPage"
-import { fplLoanAmountTenurePage } from "../../pages/loan/fpl/FPLLoanAmountTenurePage"
-import { applyCouponCodeOrPointsPage } from "../../pages/generic/ApplyCouponCodeOrPointsPage"
-import { repaymentSchedulePage } from "../../pages/loan/RepaymentSchedulePage"
-import { loanPurposePage } from "../../pages/loan/LoanPurposePage"
-import { selectBankAccountPage } from "../../pages/bank/SelectBankAccountPage"
-import { signLoanDocumentPage } from "../../pages/loan/SignLoanDocumentPage"
-import { kfsSanctionLetterPage } from "../../pages/loan/KFSSanctionLetterPage"
-import { signDocumentPage } from "../../pages/loan/SignDocumentPage"
-import { signServicePage } from "../../pages/loan/SignServicePage"
-import { signServiceOTPInputPage } from "../../pages/loan/SignServiceOTPInputPage"
-import { loanApplicationSubmittedPage } from "../../pages/loan/sa/LoanApplicationSubmittedPage"
+import { homePage } from "../../../pages/home/HomePage"
+import { fplPage } from "../../../pages/loan/fpl/FPLPage"
+import { fplLoanAmountDetailsPage } from "../../../pages/loan/fpl/FPLLoanAmountDetailsPage"
+import { fplLoanAmountTenurePage } from "../../../pages/loan/fpl/FPLLoanAmountTenurePage"
+import { applyCouponCodeOrPointsPage } from "../../../pages/generic/ApplyCouponCodeOrPointsPage"
+import { repaymentSchedulePage } from "../../../pages/loan/RepaymentSchedulePage"
+import { loanPurposePage } from "../../../pages/loan/LoanPurposePage"
+import { selectBankAccountPage } from "../../../pages/bank/SelectBankAccountPage"
+import { signLoanDocumentPage } from "../../../pages/loan/SignLoanDocumentPage"
+import { kfsSanctionLetterPage } from "../../../pages/loan/KFSSanctionLetterPage"
+import { signDocumentPage } from "../../../pages/loan/SignDocumentPage"
+import { signServicePage } from "../../../pages/loan/SignServicePage"
+import { signServiceOTPInputPage } from "../../../pages/loan/SignServiceOTPInputPage"
+import { loanApplicationSubmittedPage } from "../../../pages/loan/sa/LoanApplicationSubmittedPage"
 
 // SA loan
-import { saLoanAmountTenurePage } from "../../pages/loan/sa/SALoanAmountTenurePage"
-import { saLoanAmountDetailsPage } from "../../pages/loan/sa/SALoanAmountDetailsPage"
+import { saLoanAmountTenurePage } from "../../../pages/loan/sa/SALoanAmountTenurePage"
+import { saLoanAmountDetailsPage } from "../../../pages/loan/sa/SALoanAmountDetailsPage"
 
 //insurance 
-import { purchaseLoanPage } from "../../pages/loan/PurchaseLoanPage"
-import { addBankAccountPage } from "../../pages/bank/AddBankAccountPage"
-import { bankAccountVerificationPage } from "../../pages/bank/BankAccountVerificationPage"
-import { footerPage } from "../../pages/generic/FooterPage"
-import { accountsPage } from "../../pages/accounts/AccountsPage"
+import { purchaseLoanPage } from "../../../pages/loan/PurchaseLoanPage"
+import { addBankAccountPage } from "../../../pages/bank/AddBankAccountPage"
+import { bankAccountVerificationPage } from "../../../pages/bank/BankAccountVerificationPage"
+import { footerPage } from "../../../pages/generic/FooterPage"
+import { accountsPage } from "../../../pages/accounts/AccountsPage"
 
 
 //Profile status
-import { generalInformationPage } from "../../pages/onboarding/profile/generalInformation/GeneralInformationPage"
-import { profileInformationPage } from "../../pages/onboarding/profile/ProfileInformationPage"
-import { applicationStatusPage } from "../../pages/onboarding/profile/ApplicationStatusPage"
-import { assessingLoanEligibilityPage } from "../../pages/onboarding/profile/AssessingLoanEligibilityPage";
-import { searchCompanyNamePage } from "../../pages/onboarding/eligibility/SearchCompanyNamePage";
-import { incomeDetailsPage } from "../../pages/onboarding/eligibility/IncomeDetailsPage";
-import { panInputPage } from "../../pages/onboarding/eligibility/PanInputPage";
-import { loaderScreenPage } from "../../pages/generic/LoaderScreenPage";
-import { kycDocumentsPage } from "../../pages/onboarding/profile/kyc/KYCDocumentsPage";
-import { referencesPage } from "../../pages/onboarding/profile/referenceContacts/ReferencesPage";
-import { profileStatusPage } from "../../pages/onboarding/profile/ProfileStatusPage";
+import { generalInformationPage } from "../../../pages/onboarding/profile/generalInformation/GeneralInformationPage"
+import { profileInformationPage } from "../../../pages/onboarding/profile/ProfileInformationPage"
+import { applicationStatusPage } from "../../../pages/onboarding/profile/ApplicationStatusPage"
+import { assessingLoanEligibilityPage } from "../../../pages/onboarding/profile/AssessingLoanEligibilityPage";
+import { searchCompanyNamePage } from "../../../pages/onboarding/eligibility/SearchCompanyNamePage";
+import { incomeDetailsPage } from "../../../pages/onboarding/eligibility/IncomeDetailsPage";
+import { panInputPage } from "../../../pages/onboarding/eligibility/PanInputPage";
+import { loaderScreenPage } from "../../../pages/generic/LoaderScreenPage";
+import { kycDocumentsPage } from "../../../pages/onboarding/profile/kyc/KYCDocumentsPage";
+import { referencesPage } from "../../../pages/onboarding/profile/referenceContacts/ReferencesPage";
+import { profileStatusPage } from "../../../pages/onboarding/profile/ProfileStatusPage";
 
 //account
 
-import { headerPage } from "../../pages/generic/HeaderPage"
-import { referAndEarn } from "../../pages/accounts/referAndEarn"
-import { kbPointsPage } from "../../pages/accounts/KBPointsPage"
-import { redeemonProcessingFeePage } from "../../pages/accounts/RedeemOnProcessingFeePopPage"
-import { availableCreditLimitPage } from "../../pages/extraDetails/AvailableCreditLimitPage"
-import { profileReverificationPage } from "../../pages/extraDetails/profile-ReverificationPage"
-import { verifyHouseholdIncomePage } from "../../pages/extraDetails/verifyHouseholdIncomePage"
-import { repaymentPage } from "../../pages/repayments/RepaymentPage"
+import { headerPage } from "../../../pages/generic/HeaderPage"
+import { referAndEarn } from "../../../pages/accounts/referAndEarn"
+import { kbPointsPage } from "../../../pages/accounts/KBPointsPage"
+import { redeemonProcessingFeePage } from "../../../pages/accounts/RedeemOnProcessingFeePopPage"
+import { availableCreditLimitPage } from "../../../pages/extraDetails/AvailableCreditLimitPage"
+import { profileReverificationPage } from "../../../pages/extraDetails/profile-ReverificationPage"
+import { verifyHouseholdIncomePage } from "../../../pages/extraDetails/verifyHouseholdIncomePage"
+import { repaymentPage } from "../../../pages/repayments/RepaymentPage"
 
 
 //csr
 
-import { bankAccountDetailsPage } from "../../pages/bank/BankAccountDetailsPage"
+import { bankAccountDetailsPage } from "../../../pages/bank/BankAccountDetailsPage"
 
 
 //header
-import { help } from "../../pages/help/helpPage"
-import { pdVerifyingDetailsPage } from "../../pages/pd/PDVerifyingDetailsPage"
-import { paymentOptionPage } from "../../pages/payments/PaymentOptionPage"
-import { verifyWorkEmailInfoPage } from "../../pages/pd/basicDetails/verifyWorkEmail/VerifyWorkEmailInfoPage"
-import { verifyWorkEmailPage } from "../../pages/pd/basicDetails/verifyWorkEmail/verifyWorkEmailPage"
-import { verifyWorkEmailOTPInputPage } from "../../pages/pd/basicDetails/verifyWorkEmail/VerifyWorkEmailOTPInputPage"
-import { saVerifyWorkEmailRefreshPage } from "../../pages/loan/sa/SAVerifyWorkEmailRefreshPage"
+import { help } from "../../../pages/help/helpPage"
+import { pdVerifyingDetailsPage } from "../../../pages/pd/PDVerifyingDetailsPage"
+import { paymentOptionPage } from "../../../pages/payments/PaymentOptionPage"
+import { verifyWorkEmailInfoPage } from "../../../pages/pd/basicDetails/verifyWorkEmail/VerifyWorkEmailInfoPage"
+import { verifyWorkEmailPage } from "../../../pages/pd/basicDetails/verifyWorkEmail/verifyWorkEmailPage"
+import { verifyWorkEmailOTPInputPage } from "../../../pages/pd/basicDetails/verifyWorkEmail/VerifyWorkEmailOTPInputPage"
+import { saVerifyWorkEmailRefreshPage } from "../../../pages/loan/sa/SAVerifyWorkEmailRefreshPage"
 
 //PD
-import { pdPage, PDPage } from "../../pages/pd/PDPage"
-import { businessDetailsPage } from "../../pages/pd/businessDetails/businessDetailsPage";
-import { uploadGSTR3BPage } from "../../pages/pd/businessDetails/uploadGSTR3BPage";
-import { assetValidationPage } from "../../pages/pd/assetValidation/AssetValidationPage"
-import { selectServiceProviderPage } from "../../pages/pd/assetValidation/SelectServiceProviderPage"
-import { verifyElectricityConnectionInfoPage } from "../../pages/pd/assetValidation/VerifyElectricityConnecitonInfoPage"
-import { verifyElectricityConnectionPage } from "../../pages/pd/assetValidation/VerifyElectricityConnectionPage"
-import { incomeVerificationPage } from "../../pages/pd/incomeVerification/IncomeVerificationPage"
-import { itrvValiationInfoPage } from "../../pages/pd/incomeVerification/ITR5ValiationInfoPage"
-import { itrvValdiationPage } from "../../pages/pd/incomeVerification/ITR5ValdiationPage"
-import { basicDetailsPage } from "../../pages/pd/basicDetails/basicDetailsPage";
-import { verifyCommunicationAddressSteps } from "../../pages/pd/basicDetails/verifyCommunicationAddress/VerifyCommunicationAddressSteps";
-import { verifyConfirmAddressDetails } from "../../pages/pd/basicDetails/VerifyCommunicationAddress/VerifyConfirmAddressDetails";
-import { mobileTrustScoreInfoPage } from "../../pages/pd/basicDetails/verifyMobileTrustScore/MobileTrustScoreInfoPage";
-import { mobileLetterOfContext } from "../../pages/pd/basicDetails/verifyMobileTrustScore/MobileLetterOfContext";
-import { mobileTrustOTPInputPage } from "../../pages/pd/basicDetails/verifyMobileTrustScore/MobileTrustScoreOTPInputPage";
-import { emailVerifyingDetailsPage } from "../../pages/pd/basicDetails/verifyWorkEmail/emailVerifyingDetailsPage";
-import { calculatingCreditLimitPage } from "../../pages/extraDetails/calculatingCreditLimitpage";
-import { autoDebitSetupPage } from "../../pages/pd/autoDebitSetup/AutoDebitSetupPage";
-import { autoDebitSetupInfoPage } from "../../pages/pd/autoDebitSetup/AutoDebitSetupInfoPage";
-import { autoDebitOptionsInfoPage } from "../../pages/pd/autoDebitSetup/AutoDebitOptionsInfoPage";
-import { nachAutoDebitSetupPage, NACHAutoDebitSetupPage } from "../../pages/pd/autoDebitSetup/NACHAutoDebitSetupPage"
+import { pdPage, PDPage } from "../../../pages/pd/PDPage"
+import { businessDetailsPage } from "../../../pages/pd/businessDetails/businessDetailsPage";
+import { uploadGSTR3BPage } from "../../../pages/pd/businessDetails/uploadGSTR3BPage";
+import { assetValidationPage } from "../../../pages/pd/assetValidation/AssetValidationPage"
+import { selectServiceProviderPage } from "../../../pages/pd/assetValidation/SelectServiceProviderPage"
+import { verifyElectricityConnectionInfoPage } from "../../../pages/pd/assetValidation/VerifyElectricityConnecitonInfoPage"
+import { verifyElectricityConnectionPage } from "../../../pages/pd/assetValidation/VerifyElectricityConnectionPage"
+import { incomeVerificationPage } from "../../../pages/pd/incomeVerification/IncomeVerificationPage"
+import { itrvValiationInfoPage } from "../../../pages/pd/incomeVerification/ITR5ValiationInfoPage"
+import { itrvValdiationPage } from "../../../pages/pd/incomeVerification/ITR5ValdiationPage"
+import { basicDetailsPage } from "../../../pages/pd/basicDetails/basicDetailsPage";
+import { verifyCommunicationAddressSteps } from "../../../pages/pd/basicDetails/verifyCommunicationAddress/VerifyCommunicationAddressSteps";
+import { verifyConfirmAddressDetails } from "../../../pages/pd/basicDetails/VerifyCommunicationAddress/VerifyConfirmAddressDetails";
+import { mobileTrustScoreInfoPage } from "../../../pages/pd/basicDetails/verifyMobileTrustScore/MobileTrustScoreInfoPage";
+import { mobileLetterOfContext } from "../../../pages/pd/basicDetails/verifyMobileTrustScore/MobileLetterOfContext";
+import { mobileTrustOTPInputPage } from "../../../pages/pd/basicDetails/verifyMobileTrustScore/MobileTrustScoreOTPInputPage";
+import { emailVerifyingDetailsPage } from "../../../pages/pd/basicDetails/verifyWorkEmail/emailVerifyingDetailsPage";
+import { calculatingCreditLimitPage } from "../../../pages/extraDetails/calculatingCreditLimitpage";
+import { autoDebitSetupPage } from "../../../pages/pd/autoDebitSetup/AutoDebitSetupPage";
+import { autoDebitSetupInfoPage } from "../../../pages/pd/autoDebitSetup/AutoDebitSetupInfoPage";
+import { autoDebitOptionsInfoPage } from "../../../pages/pd/autoDebitSetup/AutoDebitOptionsInfoPage";
+import { nachAutoDebitSetupPage, NACHAutoDebitSetupPage } from "../../../pages/pd/autoDebitSetup/NACHAutoDebitSetupPage"
 
 
 
 //login
-import { knowAboutProductPage } from "../../pages/onboarding/general/KnowAboutProductPage"
+import { knowAboutProductPage } from "../../../pages/onboarding/general/KnowAboutProductPage"
 
 describe('ProcessingFee', { retries: 1 }, () => {
     it('Login With Mobile Number', () => {
 
         const DBurl = "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
         const mobilenum = "9611496051"
-        const dbip = "10.115.60.27"
+        const dbip = "10.115.60.4"
         cy.visit('/login', { failOnStatusCode: false });
         cy.log('navigated to login page');
         cy.contains('span','Login/Signup with Mobile').click({ force: true });
@@ -123,7 +123,7 @@ describe('ProcessingFee', { retries: 1 }, () => {
         cy.log("dbip :" + dbip);
 
         //SELECT otp from yp_user_otp  WHERE sentTo =9611496051  order by id desc limit 10
-        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='9611496051' order by id desc limit 1", "db_ip": "10.115.60.27" };
+        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='9611496051' order by id desc limit 1", "db_ip": "10.115.60.4" };
         cy.log(payload)
         cy.wait(3000)
         cy.request('POST', 'https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest', payload).then((resp) => {

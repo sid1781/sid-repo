@@ -8,7 +8,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       
     },
-    baseUrl: 'https://kbuatauto2app.kreditbee.dev/',
+    baseUrl: 'https://kbuatman215app.buynsta.com/',
   },
 });
 

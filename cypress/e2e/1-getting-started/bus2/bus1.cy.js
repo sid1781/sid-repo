@@ -1,56 +1,25 @@
 //loan flow
-import { homePage } from "../../pages/home/HomePage"
-import { fplPage } from "../../pages/loan/fpl/FPLPage"
-import { fplLoanAmountDetailsPage } from "../../pages/loan/fpl/FPLLoanAmountDetailsPage"
-import { fplLoanAmountTenurePage } from "../../pages/loan/fpl/FPLLoanAmountTenurePage"
-import { applyCouponCodeOrPointsPage } from "../../pages/generic/ApplyCouponCodeOrPointsPage"
-import { repaymentSchedulePage } from "../../pages/loan/RepaymentSchedulePage"
-import { loanPurposePage } from "../../pages/loan/LoanPurposePage"
-import { selectBankAccountPage } from "../../pages/bank/SelectBankAccountPage"
-import { signLoanDocumentPage } from "../../pages/loan/SignLoanDocumentPage"
-import { kfsSanctionLetterPage } from "../../pages/loan/KFSSanctionLetterPage"
-import { signDocumentPage } from "../../pages/loan/SignDocumentPage"
-import { signServicePage } from "../../pages/loan/SignServicePage"
-import { signServiceOTPInputPage } from "../../pages/loan/SignServiceOTPInputPage"
-import { loanApplicationSubmittedPage } from "../../pages/loan/sa/LoanApplicationSubmittedPage"
+import { homePage } from "../../../pages/home/HomePage"
+import { fplPage } from "../../../pages/loan/fpl/FPLPage"
+import { fplLoanAmountDetailsPage } from "../../../pages/loan/fpl/FPLLoanAmountDetailsPage"
+import { fplLoanAmountTenurePage } from "../../../pages/loan/fpl/FPLLoanAmountTenurePage"
 
-// SA loan
-import { saLoanAmountTenurePage } from "../../pages/loan/sa/SALoanAmountTenurePage"
-import { saLoanAmountDetailsPage } from "../../pages/loan/sa/SALoanAmountDetailsPage"
-
-//insurance 
-import { purchaseLoanPage } from "../../pages/loan/PurchaseLoanPage"
-import { addBankAccountPage } from "../../pages/bank/AddBankAccountPage"
-import { bankAccountVerificationPage } from "../../pages/bank/BankAccountVerificationPage"
-import { footerPage } from "../../pages/generic/FooterPage"
-import { accountsPage } from "../../pages/accounts/AccountsPage"
-import { bankAccountsPage } from "../../pages/bank/bankAccountsPage"
-import { insuranceBuyPolicyListPage } from "../../pages/insurance/InsuranceBuyPolicyListPage"
-import { insuranceBuyPolicyPage } from "../../pages/insurance/insuranceBuyPolicyPage"
-import { insuranceDetailsPage } from "../../pages/insurance/InsuranceDetailsPage"
-import { insurancePolicyDetailsPage } from "../../pages/insurance/InsurancePolicyDetailsPage"
-import { insuranceTermsAndConditionsPage } from "../../pages/insurance/InsuranceTermsAndConditionsPage"
-import { myPoliciesPage } from "../../pages/insurance/myPoliciesPage";
-import { insurancePolicyPaymentPage } from "../../pages/insurance/InsurancePolicyPaymentPage";
-import { cancelPolicyPage } from "../../pages/insurance/cancelPolicyPage"
-import { cancelPolicyPopUpPage } from "../../pages/insurance/cancelPolicyPopUpPage"
+import { insuranceBuyPolicyListPage } from "../../../pages/insurance/InsuranceBuyPolicyListPage"
+import { myPoliciesPage } from "../../../pages/insurance/myPoliciesPage";
+import { cancelPolicyPage } from "../../../pages/insurance/cancelPolicyPage"
+import { cancelPolicyPopUpPage } from "../../../pages/insurance/cancelPolicyPopUpPage"
 
 //Profile status
-import { generalInformationPage } from "../../pages/onboarding/profile/generalInformation/GeneralInformationPage"
-import { profileInformationPage } from "../../pages/onboarding/profile/ProfileInformationPage"
-import { applicationStatusPage } from "../../pages/onboarding/profile/ApplicationStatusPage"
-
-import { autoDebitMandidatesPage } from "../../pages/accounts/autoDebit/autoDebitMandatesPage"
-
-import { paymentOptionPage } from "../../pages/payments/PaymentOptionPage"
 
 
 describe('business - Insurance , Purchase Loan ', () => {
     it('Login With Mobile Number', () => {
+        
 
+       cy.viewport('samsung-s10')
         const DBurl = "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
         const mobilenum = "8073874189"
-        const dbip = "10.115.60.27"
+        const dbip = "10.115.60.4"
         cy.visit('/login', { failOnStatusCode: false });
         cy.log('navigated to login page');
         cy.contains('span','Login/Signup with Mobile').click({ force: true });
@@ -74,7 +43,7 @@ describe('business - Insurance , Purchase Loan ', () => {
         cy.log("dbip :" + dbip);
 
         //SELECT otp from yp_user_otp  WHERE sentTo =8073874189  order by id desc limit 10
-        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='8073874189' order by id desc limit 1", "db_ip": "10.115.60.27" };
+        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='8073874189' order by id desc limit 1", "db_ip": "10.115.60.4" };
         cy.log(payload)
         cy.wait(3000)
         cy.request('POST', 'https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest', payload).then((resp) => {
