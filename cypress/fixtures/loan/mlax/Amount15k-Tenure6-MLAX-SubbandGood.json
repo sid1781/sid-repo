@@ -1,0 +1,11 @@
+{
+	"code": "200",
+	"msg": "Success",
+	"model": {
+		"PreReRun": {
+			"isReRun": true,
+			"bandChange": "na",
+			"cooldownExpiresOn": ""
+		}
+	}
+}

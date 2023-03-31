@@ -1,0 +1,95 @@
+{
+    "code": "200",
+    "msg": "Success",
+    "model": {
+        "loanProduct": [
+            {
+                "action": "getNow",
+                "default": {
+                    "doc_fees": "",
+                    "emi": "Rs. 1775",
+                    "gst": "Rs. 108",
+                    "interest": "Rs. 651",
+                    "interest_string": "Annualized Interest rate starting from 22% p.a.*",
+                    "loan_amount": "Rs. 10,000",
+                    "processing_fees": "Rs. 600",
+                    "string": "Unlock this loan by repaying your EMIs on time",
+                    "tenure": "upto 6 months"
+                },
+                "id": 6,
+                "irr": 25,
+                "maxAmount": 15000,
+                "minAmount": 10000,
+                "name": "MLA-X",
+                "principalPercent": 50,
+                "productSubString": "Repayment upto 12 months",
+                "products": null,
+                "tenure": 6,
+                "tenureFrequency": {
+                    "Id": 108,
+                    "Keyid": {
+                        "id": 17,
+                        "keyValue": "",
+                        "description": ""
+                    },
+                    "Name": "productFrequency",
+                    "Val": "monthly",
+                    "Description": ""
+                },
+                "totalRepayPeriod": 0,
+                "type": "variable"
+            },
+            {
+                "action": "locked",
+                "default": {
+                    "doc_fees": "",
+                    "emi": "Rs. 18,336",
+                    "gst": "Rs. 1260",
+                    "interest": "Rs. 20,031",
+                    "interest_string": "Annualized Interest rate starting from 18% p.a.*",
+                    "loan_amount": "Rs. 2,00,000",
+                    "processing_fees": "Rs. 7000",
+                    "string": "Unlock this loan by repaying your EMIs on time",
+                    "tenure": "12 months"
+                },
+                "irr": 18,
+                "maxAmount": 200000,
+                "minAmount": 200000,
+                "name": "Block-2",
+                "principalPercent": 50,
+                "productSubString": "Repayment upto 3 months",
+                "products": null,
+                "tenure": 12,
+                "tenureFrequency": {
+                    "Val": "monthly"
+                },
+                "totalRepayPeriod": 0,
+                "type": "fixed"
+            }
+        ],
+        "loans": null,
+        "nachPrompt": 0,
+        "nachStatus": "retry",
+        "offlineData": {
+            "addressProofList": "Electricity Bill,Postpaid Mobile bill,Postpaid Telephone Bill,Rental agreement,Voters ID,Aadhaar,Passport,Driving License,Bank Account Statement,Gas Bill,Water Bill,Address Proof Letter,Pension Payment Order",
+            "offlineVerificationState": "",
+            "offlineVerifyTrackingStatus": {},
+            "scheduleDateAndTime": "",
+            "userlastBankId": ""
+        },
+        "other": {
+            "activeLoans": 0,
+            "availableCreditLimit": 15000,
+            "availablePoints": 0,
+            "band": "MLAX",
+            "cooldown": {
+                "enable": 0,
+                "expiresOn": ""
+            },
+            "isMFILimitUpdateRequired": false,
+            "isPDEnabled": 1,
+            "showRating": "0",
+            "verfiedBanks": 0
+        }
+    }
+}

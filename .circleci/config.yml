@@ -10,7 +10,7 @@ workflows:
             - cypress/install
           record: true
           parallel: true
-          parallelism: 20
+          parallelism: 3
 steps:
       - checkout
       - run: npm install

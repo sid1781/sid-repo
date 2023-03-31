@@ -1,0 +1,8 @@
+{
+    "code": "200",
+    "message": "Success",
+    "model": {
+        "kbLoanId": "KBST230309DET",
+        "loanId": 32669676
+    }
+}

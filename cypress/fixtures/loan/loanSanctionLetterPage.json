@@ -1,0 +1,11 @@
+{
+    "code": "200",
+    "msg": "Success",
+    "model": {
+        "consentId": 8,
+        "enable": 1,
+        "engConsent": "\u003cp\u003eI have read and understood the Key Fact Statement and Sanction Letter issued by the Lender(s) in respect of my loan application and I accept the same. I also understand and agree to continue receiving promotional communication from the Lenders and in respect of the value added services being offered by KreditBee.\u003c/p\u003e",
+        "hinConsent": "\u003cp\u003eमैंने अपने ऋण आवेदन के संबंध में ऋणदाताओं द्वारा जारी किए गए मुख्य तथ्य विवरण और स्वीकृति पत्र को पढ़ और समझ लिया है और मैं उसे स्वीकार करता हूं। मैं ऋणदाताओं से प्रचार संचार प्राप्त करना और KreditBee द्वारा प्रदान की जा रही मूल्य वर्धित सेवाओं के संबंध में भी समझता हूं और सहमत हूं।\u003c/p\u003e",
+        "version": 1
+    }
+}
