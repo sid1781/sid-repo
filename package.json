@@ -1,0 +1,28 @@
+{
+  "name": "kb-pom-fe-automation",
+  "version": "1.0.0",
+  "description": "Test Automation POM KB",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "cypress:paralell": "cypress-parallel -d cypress/integration/bus2/ -r mochawesome -t 2 -s test",
+    "cypress-run": "npx cypress run --browser edge --spec cypress/integration/bus2/**",
+    "reporter": "cypress-mochawesome-reporter",
+    "delete:reportFolder": "rm -rf mochawesome-report/",
+    "test:cli": "npm run delete:reportFolder && cypress run",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
+
+  },
+  "author": "Vijendra Aithal",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.0",
+    "cypress-parallel": "^0.12.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-xpath": "^2.0.1",
+    "reporter": "cypress-mochawesome-reporter"
+  }
+}
