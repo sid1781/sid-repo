@@ -99,7 +99,7 @@ describe('ProcessingFee', { retries: 1 }, () => {
 
         const DBurl = "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
         const mobilenum = "9611496051"
-        const dbip = "10.115.60.27"
+        const dbip = "10.105.60.186"
         cy.visit('/login', { failOnStatusCode: false });
         cy.log('navigated to login page');
         cy.contains('span','Login/Signup with Mobile').click({ force: true });
@@ -123,7 +123,7 @@ describe('ProcessingFee', { retries: 1 }, () => {
         cy.log("dbip :" + dbip);
 
         //SELECT otp from yp_user_otp  WHERE sentTo =9611496051  order by id desc limit 10
-        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='9611496051' order by id desc limit 1", "db_ip": "10.115.60.27" };
+        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='9611496051' order by id desc limit 1", "db_ip": "10.105.60.186" };
         cy.log(payload)
         cy.wait(3000)
         cy.request('POST', 'https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest', payload).then((resp) => {
