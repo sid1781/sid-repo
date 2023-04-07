@@ -1,176 +1,164 @@
-/// <reference types="cypress" />
+//To upadte the Values directly in Db We need To use this Scripts
 
-context('Assertions', () => {
-  beforeEach(() => {
-    cy.visit('https://example.cypress.io/commands/assertions')
-  })
+describe("Kreditbee Admin Panel", () => {
+    it.only('TO Update the value of PreloanRe=0 in yp.yp_config table', () => 
+    {
+            //cy.visit('/login', {failOnStatusCode: false});
+    
+            const DBurl="https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
+            cy.log("DBurl :"+DBurl);
+            const dbip="10.50.40.18";
+            cy.log("dbip :"+dbip);
+      //Json Format queries
 
-  describe('Implicit Assertions', () => {
-    it('.should() - make an assertion about the current subject', () => {
-      // https://on.cypress.io/should
-      cy.get('.assertion-table')
-        .find('tbody tr:last')
-        .should('have.class', 'success')
-        .find('td')
-        .first()
-        // checking the text of the <td> element in various ways
-        .should('have.text', 'Column content')
-        .should('contain', 'Column content')
-        .should('have.html', 'Column content')
-        // chai-jquery uses "is()" to check if element matches selector
-        .should('match', 'td')
-        // to match text content against a regular expression
-        // first need to invoke jQuery method text()
-        // and then match using regular expression
-        .invoke('text')
-        .should('match', /column content/i)
+      //UPDATE yp.yp_band_properties SET enable='1',penaltyProductId='10' WHERE productid='13' and band='1070' and subband='8';
+            var payload = {"query":"UPDATE `yp`.`yp_user` SET `state` = '53',`substate`='93',`isSAEnabled`='1',`isCardEnabled`='1',`ecommerceEnabled`='1' WHERE `id`='96656376'","db_ip":"10.50.40.18"};
+            cy.log(payload)
+            cy.task('query', `SELECT *  FROM yp_user  WHERE id="96656376"`).then((result) => {
+               expect(result[0].fname).to.equal('Siddeshwar')
+           })
+      
+            cy.request('POST', DBurl, payload).then((resp) => 
+            {
+               cy.wait(1000)
+               cy.log(resp.status)
+               cy.log(resp.body['body'])
+            })
 
-      // a better way to check element's text content against a regular expression
-      // is to use "cy.contains"
-      // https://on.cypress.io/contains
-      cy.get('.assertion-table')
-        .find('tbody tr:last')
-        // finds first <td> element with text content matching regular expression
-        .contains('td', /column content/i)
-        .should('be.visible')
+    });
+    it('To update the isTest =1 in yp.yp_user Table', () =>
+    { 
+        const DBurl= "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
+        cy.log("DBurl :"+DBurl);
+        const dbip ="10.50.40.98";
+        cy.log("dbip :"+dbip);
+        //Json format to update the table
+        //syntax cy.request(method, url, body)
+        var payload = {"query":"UPDATE `yp`.`yp_dsign_config` SET `value` = '1' WHERE `id`='8'","db_ip":"10.50.40.98"};
 
-      // for more information about asserting element's text
-      // see https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents
+
+        cy.request('POST', DBurl, payload).then((resp) => 
+            {
+               cy.wait(1000)
+               cy.log(resp.status)
+               cy.log(resp.body['body'])
+            })
     })
+    it('To Enable  the Esign option in env', () =>
+    { 
+        const DBurl= "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
+        cy.log("DBurl :"+DBurl);
+        const dbip ="10.50.40.14";
+        cy.log("dbip :"+dbip);
+        //Json format to update the table
+        //syntax cy.request(method, url, body)
+        var payload = {"query":"UPDATE `yp`.`yp_dsign_config` SET `value` = '1' WHERE `id`='8'","db_ip":"10.50.40.14"};
+        var payload1 = {"query":"UPDATE `yp`.`yp_dsign_config` SET `value` = '1' WHERE `id`='9'","db_ip":"10.50.40.14"};
 
-    it('.and() - chain multiple assertions together', () => {
-      // https://on.cypress.io/and
-      cy.get('.assertions-link')
-        .should('have.class', 'active')
-        .and('have.attr', 'href')
-        .and('include', 'cypress.io')
+
+        cy.request('POST', DBurl, payload).then((resp) => 
+            {
+               cy.wait(1000)
+               cy.log(resp.status)
+               cy.log(resp.body['body'])
+            })
+            cy.request('POST', DBurl, payload1).then((resp) => 
+            {
+               cy.wait(1000)
+               cy.log(resp.status)
+               cy.log(resp.body['body'])
+            })
     })
-  })
+    
 
-  describe('Explicit Assertions', () => {
-    // https://on.cypress.io/assertions
-    it('expect - make an assertion about a specified subject', () => {
-      // We can use Chai's BDD style assertions
-      expect(true).to.be.true
-      const o = { foo: 'bar' }
+})
 
-      expect(o).to.equal(o)
-      expect(o).to.deep.equal({ foo: 'bar' })
-      // matching text using regular expression
-      expect('FooBar').to.match(/bar$/i)
-    })
+// const DBurl =""
+// cy.log("DBurl :"+DBurl )
+// const DBip=""
+// cy.log("DBip :"+DBip)
 
-    it('pass your own callback function to should()', () => {
-      // Pass a function to should that can have any number
-      // of explicit assertions within it.
-      // The ".should(cb)" function will be retried
-      // automatically until it passes all your explicit assertions or times out.
-      cy.get('.assertions-p')
-        .find('p')
-        .should(($p) => {
-          // https://on.cypress.io/$
-          // return an array of texts from all of the p's
-          const texts = $p.map((i, el) => Cypress.$(el).text())
+// var payload ={"query":"UPDATE `yp`.`yp_user` set `isTest`='1' where `id`='12'","DB_ip":"10.50.40.14"}
+// cy.request('POST',DBurl,payload).then((resp) =>{
+//         cy.wait(1000)
+//         cy.log(resp.status)
+//         cy.log(resp.body['body'])
+// })
 
-          // jquery map returns jquery object
-          // and .get() convert this to simple array
-          const paragraphs = texts.get()
+describe('KB Login', () => {
+    it('Login With Mobile Number', () => {
 
-          // array should have length of 3
-          expect(paragraphs, 'has 3 paragraphs').to.have.length(3)
+        const DBurl = "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
+        const mobilenum = "8073874189"
+        const dbip = "10.105.60.210"
+        cy.visit('/login', { failOnStatusCode: false });
+        cy.log('navigated to login page');
+        cy.contains('span','Login/Signup with Mobile').click({ force: true });
+        cy.url().should('include', '/loginwithmob/mobileform');
+        cy.get('input')
+            .should('be.visible')
+            .and('have.attr', 'placeholder', '10 digit mobile number')
+            .and('have.attr', 'maxlength', '10')
+            .next()
+            .prev()
+            .type(mobilenum);
+        cy.get('[data-cy="checkboxText"]').click()
+        cy.wait(1000);
+        cy.get('[data-cy="app.components.Common.continue_btn_caps"]')
+            .click();
+        cy.wait(4000);
+        cy.url().should('include', '/loginwithmob/otpvalidation');
 
-          // use second argument to expect(...) to provide clear
-          // message with each assertion
-          expect(paragraphs, 'has expected text in each paragraph').to.deep.eq([
-            'Some text from first p',
-            'More text from second p',
-            'And even more text from third p',
-          ])
+        cy.log("DBurl :" + DBurl);
+        cy.log("mobilenum :" + mobilenum);
+        cy.log("dbip :" + dbip);
+
+        //SELECT otp from yp_user_otp  WHERE sentTo =8073874189  order by id desc limit 10
+        var payload = { "query": "SELECT otp from `yp_user_otp` WHERE `sentTo` ='8073874189' order by id desc limit 1", "db_ip": "10.105.60.210" };
+        cy.log(payload)
+        cy.wait(3000)
+        cy.request('POST', 'https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest', payload).then((resp) => {
+            cy.wait(4000)
+            cy.log(resp.status)
+            cy.log(resp.body['body'])
+            cy.wait(1000)
+            const sixdigitotp = resp.body['body'];
+            var rx = "\\d{6}"
+            var otp = parseInt(sixdigitotp.match(rx))
+            cy.log("OTP :" + otp)
+            cy.get('input')
+                .should('be.enabled')
+                .and('have.attr', 'placeholder', 'Enter OTP Here')
+                .click()
+                .type(otp);
         })
+        cy.wait(2000);
     })
+    it.only('To delete a record which has a foreign key ', () => {
 
-    it('finds element by class name regex', () => {
-      cy.get('.docs-header')
-        .find('div')
-        // .should(cb) callback function will be retried
-        .should(($div) => {
-          expect($div).to.have.length(1)
+        const DBurl = "https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest";
+        const mobilenum = "9611290254"
+        const dbip = "10.105.60.131"
+       
+        cy.log("DBurl :" + DBurl);
+        cy.log("mobilenum :" + mobilenum);
+        cy.log("dbip :" + dbip);
 
-          const className = $div[0].className
-
-          expect(className).to.match(/heading-/)
+        //SELECT otp from yp_user_otp  WHERE sentTo =8073874189  order by id desc limit 10
+        var payload = { "query": "delete from `yp`.`yp_user_otp` where `uid` ='81183779'", "db_ip": "10.105.60.131" };
+        var payload1 = { "query":"delete from `yp`.`yp_user` where `id` ='81183779'", "db_ip":"10.105.60.131"}
+    
+        cy.request('POST', 'https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest', payload).then((resp) => {
+           
+        cy.log(resp.status)
+        cy.log(resp.body['body'])
         })
-        // .then(cb) callback is not retried,
-        // it either passes or fails
-        .then(($div) => {
-          expect($div, 'text content').to.have.text('Introduction')
+        cy.request('POST', 'https://gt1vbgrgml.execute-api.ap-south-1.amazonaws.com/Automation/qsometest', payload1).then((resp) => {
+           
+        cy.log(resp.status)
+        cy.log(resp.body['body'])
         })
+        cy.wait(2000);
     })
-
-    it('can throw any error', () => {
-      cy.get('.docs-header')
-        .find('div')
-        .should(($div) => {
-          if ($div.length !== 1) {
-            // you can throw your own errors
-            throw new Error('Did not find 1 element')
-          }
-
-          const className = $div[0].className
-
-          if (!className.match(/heading-/)) {
-            throw new Error(`Could not find class "heading-" in ${className}`)
-          }
-        })
-    })
-
-    it('matches unknown text between two elements', () => {
-      /**
-       * Text from the first element.
-       * @type {string}
-      */
-      let text
-
-      /**
-       * Normalizes passed text,
-       * useful before comparing text with spaces and different capitalization.
-       * @param {string} s Text to normalize
-      */
-      const normalizeText = (s) => s.replace(/\s/g, '').toLowerCase()
-
-      cy.get('.two-elements')
-        .find('.first')
-        .then(($first) => {
-          // save text from the first element
-          text = normalizeText($first.text())
-        })
-
-      cy.get('.two-elements')
-        .find('.second')
-        .should(($div) => {
-          // we can massage text before comparing
-          const secondText = normalizeText($div.text())
-
-          expect(secondText, 'second text').to.equal(text)
-        })
-    })
-
-    it('assert - assert shape of an object', () => {
-      const person = {
-        name: 'Joe',
-        age: 20,
-      }
-
-      assert.isObject(person, 'value is object')
-    })
-
-    it('retries the should callback until assertions pass', () => {
-      cy.get('#random-number')
-        .should(($div) => {
-          const n = parseFloat($div.text())
-
-          expect(n).to.be.gte(1).and.be.lte(10)
-        })
-    })
-  })
+   
 })
