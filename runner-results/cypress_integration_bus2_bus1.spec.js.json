@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 3,
+  "passes": 0,
+  "pending": 0,
+  "failures": 3,
+  "start": "2023-05-12T07:52:40.270Z",
+  "duration": 13422,
+  "file": "cypress/integration/bus2/bus1.spec.js"
+}
