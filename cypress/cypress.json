@@ -1,0 +1,24 @@
+{
+    "nodeVersion": "system",
+    "viewportHeight": 1200,
+    "viewportWidth": 660,
+    "pageLoadTimeout": 50000,
+    "requestTimeout": 30000,
+    "chromeWebSecurity": false,
+    "WebSecurity": false,
+    "experimentalStudio": true,
+    "baseUrl": "https://kbuatauto2app.kreditbee.dev/",
+    "Baseurl-IOS":"https://kbuatauto07mix-pwa-ios.kreditbee.dev/",
+    "projectId": "kb200",
+    "videosFolder": "cypress/videos",
+    "video": true,
+    "retries": 0,
+    "videoUploadOnPasses": true,
+    "videoCompression": 32,
+    "screenshotsFolder": "./cypress/snapshots/actual",
+    "watchForFileChanges": false,
+    "trashAssetsBeforeRuns": true,
+    "env": {
+        "failSilently": false
+           }
+}

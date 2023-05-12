@@ -38,6 +38,9 @@ export class FPLLoanAmountDetailsPage {
         //One Time Onboarding Fee Block 
         lblOneTimeOnboardingFee: () => cy.get('[data-cy="allFees_title"]'),
         valOneTimeOnboardingFee: () => cy.get('[data-cy="allFees_formatCurrency"]'),
+        //Credit Re-Assessment Fee Block
+        lblCreditReAssessmentFee: () => cy.get('[data-cy="allFees_title"]'),
+        valCreditReAssessmentFee: () => cy.get('[data-cy="allFees_formatCurrency"]'),
         //Loan Documennts Signing Fee Block
         lblLoanDocumantSigningFee: () => cy.get('[data-cy="agreementFees_title"]'),
         valLoanDocumantSigningFee: () => cy.get('[data-cy="agreementFees_formatCurrency"]'),
@@ -113,6 +116,12 @@ export class FPLLoanAmountDetailsPage {
     }
     verifyOnboardingFeeValue(value){
         this.elements.valOneTimeOnboardingFee().should('have.text',value)
+    }
+    verifyCreditReAssessmentFeeLabel(CreditReAssessmentFee){
+        this.elements.lblCreditReAssessmentFee().should('have.text',CreditReAssessmentFee)
+    }
+    verifyCreditReAssessmentFeeValue(value){
+        this.elements.valCreditReAssessmentFee().should('have.text',value)
     }
     verifyInsurancePremiumLabel() {
         this.elements.lblInsurancePremium().should('be.visible')

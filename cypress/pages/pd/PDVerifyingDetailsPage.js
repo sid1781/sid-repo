@@ -9,7 +9,7 @@ export class PDVerifyingDetailsPage {
 
     elements = {
         iconVerifyingDetails: () => cy.get('.skins__UnlockedImg-sc-1xw0zye-88 flLZel'),
-        pageTitle: () => cy.contains('Verifying details'),
+        pageTitle: () => cy.contains('span','Verifying Details'),
         subTextOfVerifyingDetails: () => cy.contains('We are verifying the provided information.'),
         btnOK: () => cy.get('[data-cy="app.components.Common.ok_btn_uc"]'),
         btnRefresh : () => cy.contains('button','REFRESH '),

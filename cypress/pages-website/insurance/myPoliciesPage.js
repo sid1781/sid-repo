@@ -9,9 +9,9 @@ export class MyPoliciesPage {
 
     elements ={
     
-        pageTitle : () => cy.contains('span','My Policies'),
-        lblPolicyIssued : () => cy.contains('p','Issued'),
-        btnRaiseClaim : () => cy.contains('button','Raise Claim'),
+        pageTitle : () => cy.getIframeBody().contains('span','My Policies'),
+        lblPolicyIssued : () => cy.getIframeInsuranceBody().contains('p','Issued'),
+        btnRaiseClaim : () => cy.getIframeBody().contains('button','Raise Claim'),
         lnkCancelPolicy : () => cy.getIframeBody().contains('div','Cancel Policy'),
         lblPolicyRefundedInitiated : () => cy.getIframeBody().contains('p','Refund initiated'),
         txtPolicyRefundedAndCancelled : () => cy.getIframeBody().contains('p','Your policy has been cancelled and your refund is in progress. We will notify you once the refund is processed.'),
@@ -37,7 +37,7 @@ export class MyPoliciesPage {
     }
 
     verifyPolicyIssuedLabel(title) {
-        this.elements.lblPolicyIssued().should('contain.text', title)
+        this.elements.lblPolicyIssued().should('have.text', title)
     }
 
     verifyRaiseClaimButton(title) {
@@ -117,17 +117,9 @@ export class MyPoliciesPage {
     verifyRaiseCliamButtonNotVisible(){
         this.elements.btnRaiseClaim().should('not.exist')
     }
-    clickRaiseClaimButton() {
-        this.elements.btnRaiseClaim().click()
-    }
     verifyRefundedLabel(label){
         this.elements.lblRefunded().should('have.text',label)
     }
-    clickRaiseClaimButton() {
-        this.elements.btnRaiseClaim().click()
-    }
-
-
 
     verifyPolicyCancelledText(txtcancel){
         this.elements.txtPolicyCancelled()

@@ -1,35 +1,38 @@
 import { activeLoanStatusPage } from "../../pages/accounts/activeLoanStatusPage"
 import { homePage } from "../../pages/home/HomePage"
-import { homePageIframe } from "../../pages-website/home/HomePageIframe"
+import { activeLoanStatusWebPage } from "../../pages/WebsitePages/activeLoanStatusWebPage"
+import { selectBankAccountWebPage } from "../../pages/WebsitePages/bank/SelectBankAccountWebPage"
 import { csrInfoPageWeb } from "../../pages/WebsitePages/creditScoreReport/CSRInfoPageWeb"
 import { csrOTPInputWebPage } from "../../pages/WebsitePages/creditScoreReport/CSROTPInputWebPage"
 import { csrPaymentOptionsWebPage } from "../../pages/WebsitePages/creditScoreReport/CSRPaymentOptionsWebPage"
 import { homePageWeb } from "../../pages/WebsitePages/HomePageWeb"
+import { fplLoanAmountDetailsWebPage } from "../../pages/WebsitePages/loan/fpl/FPLLoanAmountDetailsWebPage"
+import { fplLoanAmountTenureWebPage } from "../../pages/WebsitePages/loan/fpl/FPLLoanAmountTenureWebPage"
+import { fplWebPage } from "../../pages/WebsitePages/loan/fpl/FPLWebPage"
+import { kfsSanctionLetterWebPage } from "../../pages/WebsitePages/loan/KFSSanctionLetterWebPage"
+import { loanApplicationSubmittedWebPage } from "../../pages/WebsitePages/loan/LoanApplicationSubmittedWebPage"
+import { loanPurposeWebPage } from "../../pages/WebsitePages/loan/LoanPurposeWebPage"
+import { repaymentScheduleWebPage } from "../../pages/WebsitePages/loan/RepaymentScheduleWebPage"
+import { signDocumentWebPage } from "../../pages/WebsitePages/loan/SignDocumentWebPage"
+import { signLoanDocumentWebPage } from "../../pages/WebsitePages/loan/SignLoanDocumentWebPage"
+import { signServiceOTPInputWebPage } from "../../pages/WebsitePages/loan/SignServiceOTPInputWebPage"
+import { signServiceWebPage } from "../../pages/WebsitePages/loan/SignServiceWebPage"
 import { paymentOptionWebPage } from "../../pages/WebsitePages/PaymentOptionWebPage"
 import { payViaUpiPage } from "../../pages/WebsitePages/PayViaUpiPage"
-import { insuranceBuyPolicyListPage } from "../../pages-website/insurance/InsuranceBuyPolicyListPage"
-import { insurancePolicyDetailsPage } from "../..//pages-website/insurance/InsurancePolicyDetailsPage"
-import { insuranceBuyPolicyPage } from "../../pages-website/insurance/insuranceBuyPolicyPage"
-import { insurancePolicyPaymentPage } from "../../pages-website/insurance/InsurancePolicyPaymentPage";
-// import { paymentOptionPage } from "../../pages-website/paymentOptionPage"
-import { paymentOptionPage } from "../../pages/payments/PaymentOptionPage"
-import { insuranceTermsAndConditionsPage } from "../../pages/insurance/InsuranceTermsAndConditionsPage"
-import { myPoliciesPage } from "../../pages/insurance/myPoliciesPage"
-
+const WebURL = "https://kbuatman215mix-pwa-web.buynsta.com/signin"
 describe('BusinessCases IOS', () => {
-    const WebURL = "https://kbuatauto2mix-pwa-app-web.kreditbee.dev/newhome"
-    const WebIframeURL ="https://kbuatauto2mix-pwa-web.kreditbee.dev/signin"
+
 
     it('KB-T55737 (1.0)Check Checkout Finance Card, when user is having active EWA loan', () => {
         cy.intercept('**/home', { fixture: 'home/homePage-EWADisbursed.json' })
         cy.visit(WebURL, { failOnStatusCode: false })
-        homePage.verifylockedButton('LOCKED')
-        homePage.verifyPurchaseLoanValue('60,000')
-        homePage.clickLockedButton()
+        homePageWeb.verifylockedButton('LOCKED')
+        homePageWeb.verifyPurchaseLoanValue('60,000')
+        homePageWeb.clickLockedButton()
         //activeLoanStatusPage.verifyActiveLoanIcon('https://ik.imagekit.io/kreditbee/app-static/loan/ic_loanblock_es.svg')
-        activeLoanStatusPage.verifyActiveLoanLabel('Active Loan')
+        activeLoanStatusWebPage.verifyActiveLoanLabel('Active Loan')
+
     })
-    
     it('KB-T60165 (1.0)Verify Confirmed User is able to Generate the CSR Report with UPI mode', () => {
         cy.intercept('**/home', { fixture: '/crediscoreReport-Web/homePage.json' })
         cy.intercept('**/me/creditreport', { fixture: '/crediscoreReport-Web/creditscoreReportPayAndGet.json' })
@@ -57,7 +60,7 @@ describe('BusinessCases IOS', () => {
         payViaUpiPage.clickContinueMakePaymentButton()
 
     })
-    it('KB-T60162 (1.0)Ensure Rejected user is able to Generate the CSR Report with UPI mode',()=>{
+    it('KB-T60162 (1.0)Ensure Rejected user is able to Generate the CSR Report with UPI mode', () => {
         cy.intercept('**/home', { fixture: '/crediscoreReport-Web/csrHomePageRejectUser' })
         cy.intercept('**/me/creditreport', { fixture: '/crediscoreReport-Web/creditscoreReportPayAndGet.json' })
         cy.intercept('**/me/tnc/csr', { fixture: '/crediscoreReport-Web/CSR.json' })
@@ -84,7 +87,7 @@ describe('BusinessCases IOS', () => {
 
     })
 
-    it('KB-T60164 (1.0) Ensure Rejected user is able to Generate the CSR Report with UPI intent mode',()=>{
+    it('KB-T60164 (1.0) Ensure Rejected user is able to Generate the CSR Report with UPI intent mode', () => {
         cy.intercept('**/home', { fixture: '/crediscoreReport-Web/csrHomePageRejectUser' })
         cy.intercept('**/me/creditreport', { fixture: '/crediscoreReport-Web/creditscoreReportPayAndGet.json' })
         cy.intercept('**/me/tnc/csr', { fixture: '/crediscoreReport-Web/CSR.json' })
@@ -110,7 +113,7 @@ describe('BusinessCases IOS', () => {
         payViaUpiPage.clickGpayIcon
     })
 
-    it('KB-T60163 (1.0)Ensure Confirmed user is able to Generate the CSR Report with UPI mode',()=>{
+    it('KB-T60163 (1.0)Ensure Confirmed user is able to Generate the CSR Report with UPI mode', () => {
         cy.intercept('**/home', { fixture: '/crediscoreReport-Web/homePage.json' })
         cy.intercept('**/me/creditreport', { fixture: '/crediscoreReport-Web/creditscoreReportPayAndGet.json' })
         cy.intercept('**/me/tnc/csr', { fixture: '/crediscoreReport-Web/CSR.json' })
@@ -136,80 +139,45 @@ describe('BusinessCases IOS', () => {
         payViaUpiPage.clickContinueMakePaymentButton()
     })
 
-    it.only('KB-T45876 (1.0)[Insurance] Check the payment is successful for the insurance with ICICIUPIQR', {
-        "retries": 1
-      },
-      
-      () => {
-        cy.intercept('**/ecom/offers?type=insuranceHomeBanner', { fixture: 'insurance/buyPolicyPage-Banner.json' })
-        cy.intercept('**/home', { fixture: 'home/homePage-Insurance.json' }).as('homePage')
-        cy.intercept('**/vasins/policies', { fixture: 'insurance/buyPolicyPage-Insurance.json' })
-        cy.intercept('**/vasins/policies/details?policy_id=**', { fixture: 'insurance/policyDetailsPage.json' }).as('policyDetailsPage')
-        cy.intercept('**/vasins/policies/userpremium?policy_id=**', { fixture: 'insurance/buyInsurancePremiumPolicyPage.json' })
-        cy.intercept('**/vasins/policies/states', { fixture: 'insurance/buyInsurancePolicyPage.json' })
-        cy.intercept('**/vas/me/tnc/insurance', { fixture: 'insurance/insurancePolicyDetailsPage-tnc.json' })
-        cy.intercept('**/vas/me/tnc/insurance', { fixture: 'insurance/insurancePoilcyDetailsPage-TNC.json' })
-        cy.intercept('**/vas/policies/paymentdetails?policy_Id=**&premium_Id=**', { fixture: 'insurance/policyPaymentDetailsPage.json' }).as('paymentPage')
-        cy.intercept('**/vasins/policies/insurancereport?user_policy_id=**', { fixture: "insurance/PaymentOptionPage-ins.json" })
-        cy.intercept('**/vasins/policies/order',{fixture:'insurance/paymentOptionPage-Order.json'})
-        cy.intercept('**/vaspg/me/payment?v=****', { fixture: 'insurance/PaymentOptionPage-UPIQR-enable.json' })
-        cy.visit( WebURL, { failOnStatusCode: false })
-        cy.wait('@homePage')
-        // homePage.clickInsuranceLabel()
-        cy.contains('span','Insurance').click({ multiple: true })
-        // homePageIframe.clickInsuranceLabel()
-        // cy.wait(3000)
-        // insuranceBuyPolicyListPage.clickGetNowBtn()
-        // cy.wait(3000)
-        // insurancePolicyDetailsPage.clickGetInsuredInJust5MinutesButton()
-        // insuranceBuyPolicyPage.verifySelectAPlanLabel('Select a Plan')
-        // insuranceBuyPolicyPage.clickSelectAPlanRadioButton()
-        // insuranceBuyPolicyPage.clickIAgreeToTermsAndConditionsCheckbox()
-        // insuranceBuyPolicyPage.clickContinueButton()
-        // insurancePolicyPaymentPage.verifyPageTitle('Payment')
-        // insurancePolicyPaymentPage.verifyConfirmAndPayButton('Confirm and Pay')
-        // insurancePolicyPaymentPage.clickConfirmAndPayButton()
-        // cy.wait(3000)
-        // paymentOptionPage.verifyTitlePaymentOptionPage('Payment Option')
-        // paymentOptionPage.clickPayWithUPIOrQRbutton()
-        insuranceBuyPolicyListPage.clickGetNowBtn('Personal Accident + Hospicash (Reimbursement of Rs. 1000 per day)')
-        insurancePolicyDetailsPage.verifyPolicyPeriodLabel('POLICY PERIOD')
-        insurancePolicyDetailsPage.verifyCoverageUptoLabel('COVERAGE UPTO')
-        insurancePolicyDetailsPage.verifyPremiumStartsAtLabel('PREMIUM STARTS AT')
-        insurancePolicyDetailsPage.verifyWhatsCoveredLabel("What's Covered")
-       // insurancePolicyDetailsPage.clickTermsAndConditionsLink()
-       // insuranceTermsAndConditionsPage.clickInsuranceTermsAndConditionsPageBackButton()
-        insurancePolicyDetailsPage.clickGetInsuredInJust5MinutesButton()
-        insuranceBuyPolicyPage.verifySelectAPlanLabel('Select a Plan')
-        insuranceBuyPolicyPage.verifyCustomerInformationLabel('Customer Information')
-      //  insuranceBuyPolicyPage.verifyAddressEditIcon()
-        insuranceBuyPolicyPage.verifyAddANomineeOptionalLabel('Add a nominee')
-        insuranceBuyPolicyPage.clickSelectAPlanRadioButton()
-        insuranceBuyPolicyPage.clickIAgreeToTermsAndConditionsCheckbox()
-        insuranceBuyPolicyPage.clickContinueButton()
-        insurancePolicyPaymentPage.verifyPageTitle('Payment')
-        insurancePolicyPaymentPage.verifyConfirmAndPayButton('Confirm and Pay')
-        insurancePolicyPaymentPage.clickConfirmAndPayButton()
-        // paymentOptionPage.clickPayWithUPIOrQRbutton()
-        paymentOptionPage.clickPayWithUPIOrQRbutton()
-        payViaUpiPage.verifyPageTitle('Pay via UPI')
-       // paymentOptionPage.verifyPageT('Payment Option')
-    })
-    it.only('KB-T45876 (1.0)[Insurance] Check the payment is successful for the insurance with ICICIUPIQR',{
-        "retries": 1
-      },()=>{
-        cy.intercept('**/home', { fixture: 'home/homePage-Insurance.json' }).as('homePage')
-        cy.intercept('**/vasins/policies',{fixture:'insurance/buyPolicyPage-Insurance-Issued.json'})
-        cy.intercept('**/vasins/policies/userpolicy',{fixture:'insurance/myPoliciesPage-Issued.json'})
-        cy.visit( WebURL, { failOnStatusCode: false })
-        cy.wait('@homePage')
-        cy.contains('span','Insurance').click({ multiple: true })
-        insuranceBuyPolicyListPage.clickMyPoliciesLink()
-        myPoliciesPage.verifyPolicyIssuedLabel('Issued')
-        // homePageIframe.clickInsuranceLabel()
-        // cy.wait(3000)
-        // insuranceBuyPolicyListPage.clickMyPoliciesLink()
-        // myPoliciesPage.verifyPolicyIssuedLabel('Issued')
-    })
+})
 
+describe('SME - Working Capital Loan Product', () => {
+
+    it('KB-T61350 Verify SME Business loan is disbursing for MLA X band', () => {
+        cy.intercept('**/home', { fixture: 'home/homePage-SME-15K.json' }).as('home')
+        cy.intercept('**/category?name=fplfalse', { fixture: 'loan/mlax/MLAXPage-15k.json' })
+        // cy.intercept('**/ecom/offers?type=preloanBanner',{fixture:'loan/mlax/MLAX-Offertype.json'})
+        cy.intercept('**/products?productId=6&action=getNow&preLoanEvent=preLoanGetNowClick', { fixture: 'loan/mlax/MLAX-ProductID-6.json' })
+        cy.intercept('**/products?productId=6', { fixture: 'loan/mlax/MLAXAmount15K.json' })
+        cy.intercept('**/products/calcfees?productid=**', { fixture: 'loan/mlax/mlaxLoanAmountTenurePage-feescalculations.json' })
+        cy.intercept('**/me/bank?productid=**', { fixture: 'bank/bankAccountVerifiedPage.json' })
+        cy.intercept('**/loan/la?updateMFILimit=0&productid=**', { fixture: 'loan/signLoanDocumentPage-DigFaceID.json' })
+        cy.intercept('**/loan/la?type=kb&productid=6&loanamt=**', { fixture: 'loan/loanSanctionPage.json' })
+        cy.intercept('**/me/otp?reason=clickwrap&kbloanId=**', { fixture: 'otp/otp-sanctionOTP.json' })
+        cy.intercept('**/me?source=session', { fixture: 'otp/loanApplicationPage-InsSubmit.json' })
+        cy.visit(WebURL, { failOnStatusCode: false })
+        cy.wait('@home')
+        homePageWeb.clickBlockFPLGetNow()
+        fplWebPage.clickFPL4KGetNowBtn()
+        fplLoanAmountTenureWebPage.clickViewSummaryAndChargesBtn()
+        fplLoanAmountDetailsWebPage.clickViewRepaymentScheduleBtn()
+        repaymentScheduleWebPage.verifyPermissionMissingContinueButton(1,'Continue')
+        repaymentScheduleWebPage.clickContinueBtn()
+        selectBankAccountWebPage.clickContinueBtn()
+        signLoanDocumentWebPage.clickDigitalSignButton()
+        signLoanDocumentWebPage.clickContinueBtn()
+        kfsSanctionLetterWebPage.clickContinueToSignLoanDocumentButton()
+        signDocumentWebPage.clickContinueButton()
+        signServiceWebPage.verifyConsentReadText('I had carefully read the Standard Terms and Conditions and the Most important Terms and Conditions for availing loan from the lender')
+        signServiceWebPage.verifyConsentUnderstoodText(' I had understood and read the Standard Terms and Conditions and the Most Important Terms and Conditions for availing loan from the Lender.')
+        signServiceWebPage.verifyConsentLegalAndBindingText(' I had further understand that upon acceptance of the Standard Terms and Conditions and the Most Important Terms and Conditions for availing loan from the Lender, a legal and binding agreement shall be created between us under the Indian Contract Act, 1872 read with Information Technology Act, 2000.')
+        signServiceWebPage.selectConsent()
+        signServiceWebPage.verifyContinueButtonText('Continue ')
+        signServiceWebPage.clickContinueButton()
+        cy.clock()
+        signServiceOTPInputWebPage.verifyEnterOTPLabel('Enter OTP sent to number xxxxxxx281') //number changes w.r.t user logged in
+        signServiceOTPInputWebPage.verifySignDocumentLabel('Sign Document with Face ID verification in the next step')
+        signServiceOTPInputWebPage.enterOTP('123456')
+        cy.tick(4000)
+    })
 })

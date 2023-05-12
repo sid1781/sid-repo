@@ -51,7 +51,7 @@ export class ProfileReverificationPage {
     clickMobileRigiterNumber(){
         this.elements.lblMobileRigiterNumber().click({force:true})
     }
-    clickContinue(){
+    clickContinueButton(){
         this.elements.btnContinue().click()
     }    
     verifySkipForLaterButton(btnSkipForLater){
@@ -71,6 +71,7 @@ export class ProfileReverificationPage {
     verifyNoFasterProcessingLabel() {
         this.elements.lblNoFasterProcessing().should('not.exist')
     }
+
     verifyAutoDebitSetupLabel(autodebit) {
         this.elements.lblSetupAutoDebit().should('have.text', autodebit)
     }

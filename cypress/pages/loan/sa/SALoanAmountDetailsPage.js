@@ -75,8 +75,10 @@ export class SALoanAmountDetailsPage {
         //Repayment Schedule Button
         btnViewRepaymentSchedule: () => cy.get('[data-cy="app.components.LoanDetails.viewRepaySchedule"]'),
         lblLoanAmountUpto: () => cy.get('[data-cy="app.components.BbankAccount.place_locked_loan_amt_upto"]'),
+
         //Document Fee
         lblDocumentCollectFee: () => cy.get('[data-cy="allFees_title"]'),
+
     }
 
     verifyTotalIntrestLabel(label) {

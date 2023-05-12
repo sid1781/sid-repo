@@ -1,5 +1,5 @@
 /// <reference types = "cypress" />
-export class HomePageWeb {
+export class HomePageIframe {
     details = {
         zeplin: () => 'https://zpl.io/3XZXj0x',
         overflow: () => 'https://overflow.io/s/1NS0Y7J3/?node=e40e434b',
@@ -32,10 +32,10 @@ export class HomePageWeb {
         txtCompleteKYCviaVideoCall: () => cy.getIframeBody().find('[]'),
         lnkCompleteKYCviaVideoCall: () => cy.getIframeBody().find('[]'),
         subTxtCompleteKYCviaVideoCall: () => cy.getIframeBody().find('[]'),
-        iconInsurance: () => cy.getIframeBody().find('[data-cy="insurance_img"]', { timeout: 9000 }),
-        lblInsurance: () => cy.getIframeBody().find('[data-cy="insurance_title"]'),          /*tab -- when we click insurance, it is navigating to other page so used the tab */
-        iconCreditReport: () => cy.get('[data-cy="csr"]',{timeout : 15000}),
-        lblCreditReport: () => cy.get('[data-cy="csr_title"]'),
+        iconInsurance: () => cy.getIframeBody().find('img', { timeout: 9000 }),
+        lblInsurance: () => cy.getIframeBody().contains('Insurance'),          /*tab -- when we click insurance, it is navigating to other page so used the tab */
+        iconCreditReport: () => cy.getIframeBody().find('[data-cy="csr"]', { timeout: 15000 }),
+        lblCreditReport: () => cy.getIframeBody().find('[data-cy="csr_title"]'),
         iconRefer: () => cy.getIframeBody().find('[]'),
         lblRefer: () => cy.getIframeBody().find('[]'),
         iconGold: () => cy.getIframeBody().find('[data-cy="gold_img"]'),
@@ -71,10 +71,9 @@ export class HomePageWeb {
         btnSA20KGetNow: () => cy.getIframeBody().find('[data-cy="app.components.NewHomePage.nhp_pdt_item_btn_getnow"]', { timeout: 9000 }).parent('div').children('button'),
 
         //SME block
-        lblWorikingWithCaptialLoan: () => cy.getIframeBody().find('[data-cy="smeb"]',{timeout:8000}),
-        amtForSME: () => cy.getIframeBody().find('[data-cy="10000"]',{timeout:8000}),
-        btnLocked:()=>cy.getIframeBody().find('[data-cy="app.components.NewHomePage.nhp_pdt_item_btn_locked"]').eq(3),
-        valPurchaseLoan:()=>cy.getIframeBody().find('[data-cy="60000"]')
+
+        lblWorikingWithCaptialLoan: () => cy.getIframeBody().find('[data-cy="smeb"]', { timeout: 8000 }),
+        amtForSME: () => cy.getIframeBody().find('[data-cy="10000"]', { timeout: 8000 }),
     }
 
     //lblFlexiPersonalLoan
@@ -267,18 +266,6 @@ export class HomePageWeb {
     clickInsuranceLabel() {
         this.elements.lblInsurance().click()
     }
-    verifylockedBtn() {
-        this.elements.btnLocked().should('be.visible')
-    }
-    clickLockedButton(){
-        this.elements.btnLocked().click()
-    }
-    verifylockedButton(locked){
-        this.elements.btnLocked().should('contain',locked)
-    }
-    verifyPurchaseLoanValue(value){
-        this.elements.valPurchaseLoan().should('contain',value)
-    }
 }
 
-export const homePageWeb = new HomePageWeb()
+export const homePageIframe = new HomePageIframe()

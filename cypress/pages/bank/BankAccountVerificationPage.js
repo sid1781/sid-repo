@@ -14,9 +14,9 @@ export class BankAccountVerificationPage {
         icon1Rupee : () => cy.get('[]'),
         iconBank : () => cy.get('[]'),
         txt1Rupee : () => cy.get('[]'),
+        txtFundTransferForAccountVerification : () => cy.get('[data-cy="app.components.BbankAccount.acc_verify_vtxt"]'),
         subTxt1Rupee : () =>  cy.get('[data-cy="app.components.BbankAccount.acc_verify_vtxt"]'),
         btnContinue : () =>  cy.get('[data-cy="app.components.BbankAccount.acc_verify_continue"]'),
-        
     }
 
    clickContinueBtn() {

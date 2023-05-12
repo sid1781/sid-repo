@@ -51,10 +51,10 @@ class KBPointsPage{
     clickCashInBankAccountLabel(){
         this.elements.lblCashInBankAccount().click()
     }
+
     clickContinueBtn(){
          this.elements.btncontinue().click()
     }
        
-        
 }
 export const kbPointsPage = new KBPointsPage()
