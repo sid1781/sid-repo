@@ -1,0 +1,51 @@
+
+
+Base Count 1218 
+Total cases Picked for automation sanity =413
+Total Scripted:282
+Total Moved At Exe=261
+Pending to Move to at exe=21
+Overall Sanity as on Today2158
+Total AT Execution as on today=1479
+Total Manual Execution as on today=679
+
+Out of 413 we have scripted 282 cases. and 42 cases were deprecated and moved to system. 42 cases we yet to script as these cases are dependent on multiple platforms to set the pre-condtions it is taking time to automate these cases as the pre-condtions are more. 47 cases are found as cant be automated reason for not automatable will publish in the next report
+413-282-42-42-47
+ 
+Knowledge on ALM and JIRA.
+
+o Understanding of DBMS  and  RDBMS  concepts like Constraints, data types. 
+o Knowledge of Subsets in SQL like  DQL  ,DML, TCL,DCL,DDL.
+o knowledge of writing queries.
+
+7.10lakh
+
+3years
+ 13.75 interest
+24180 *
+
+ 
+
+413 total
+270-253 =17
+yet to automate
+12+48+10=70
+
+20
+53 =
+37 cant be automated=
+16
+base 1218
+at as on today 1471
+manual as on today 693
+
+253 cases moved to at execution 
+
+Sandhya joined the Test Automation Team as a Fresher and quickly grasped the system end-to-end. She made significant contributions by creating more than 150 automation scripts, effectively reducing the manual team's workload. Her contributions extended to testing various features, including LMS, Onboarding, and Digital Gold Enhancements. Additionally, she played a crucial role in ensuring timely automation execution. Sandhya's ability to learn swiftly and meet deadlines, coupled with her readiness to provide support whenever needed, has been invaluable to the team.
+
+KB-T69926 (1.0) Ensure appType is updating as WEB , when radio button is enabled from WEB platform.
+
+
+
+
+

@@ -1,0 +1,88 @@
+ in which aggregate report is one of the listeners that are provided by the JMeter
+
+
+
+To test the performance of the kb application when 1000 User will onboard the kb-application with the time interval of 20 seconds.
+To test the performance of the kb application when 2000 User will onboard the kb-application with the time interval of 15 seconds
+To test the performance of the kb application when 5000 users will onboard the kb-application with time a interval of 20 seconds.
+
+
+
+ Target Audience
+350
+Project/Release/Build details
+Master
+Test Environment 
+https://kbuatauto2app.kreditbee.dev/login
+Type of testing 
+Load/stress 
+Protocols
+ 
+Business flows
+User Onboarding
+Test data
+50/100/200 user will be on-boarded to kreditbee platform with a time interval of 10 seconds.
+Inputs from Performance monitoring tools
+Memory usage
+Requests per minute 
+bytes per request.
+Average response time. ...
+Error rates.
+
+verifycontactustext
+
+laoding app time.
+profile completion time.
+
+cypress-audit plugin
+
+mobile rendering appl
+
+:xKP6DOvJ
+
+
+[uatauto]
+credential_source = Ec2InstanceMetadata
+role_arn = arn:aws:iam::081024626761:role/aws-sso-power-user-access
+aws codecommit push --repository-name <repository-name> --branch-name <branch-name> --commit-message "<commit-message>" --source <source>
+
+
+
+Fixture names--camelcaps- this name should be related to the page which they are hitting
+integration--loan.spec.js -loan-apr-calculation.spec.js
+1)unwanted spaces
+2)extra lines
+3)Commentented lines should not be there
+4)
+
+
+
+Coupoun code data-cy changes
+gold coupon code flow changes
+eligibility - flow data-cy changes
+
+
+
+
+Sandya-CSR-onBoarding going on
+Loan,Communication,Vas
+
+Mastan-accounts,bank--rating-pkyc,insurance
+
+madhavi-loan2-vas,contact address,repayment and pd
+
+tasmiya-=contact us,Ed-couponcode,,homepage,
+
+Module-Delete Account
+PD -Credit Limit And Dicount
+help Page 
+Loan Amount Tenure Page
+Bank account Details
+onboarding Data-cy Changes.
+repaymentPage-15k-Id-FE3100Per-1stEMI.json
+HSFs2Tev
+1)Fixture naming
+2)otp--otp change this f name to appropriate name
+3)avoid class name 
+4)/newhome use this 
+./env-manager daily-pipeline --env=uat --instance=110 --aws-profile=uat --backend-build-root=533fd120-9e4c-4174-82f9-83e802be1106  --frontend-build-root=devops-full-fe-mono-repo:48877bd2-7fb0-4631-a733-e432c3090fa8-2023-04-14_12:15:02  --mail-list='siddeshwar.mali@krazybee.com,monisha.nethaji@krazybee.com'  --api-test-branch= --ui-test-branch=fe-pom-Modules  --no-dbclone  --codebuild-aws-account=stage  --just-test --api-test=false  --force

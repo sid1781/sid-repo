@@ -1,0 +1,22 @@
+{
+	"students": [{
+			"id": 1,
+			"sname": "siddeshwar",
+			"Job": "Test Engnieer"
+		},
+		{
+			"id": 2,
+			"sname": "nagesh",
+			"Job": "Test Engnieer"
+		},
+		{
+			"id": 3,
+			"sname": "nagesh",
+			"Job": "Test Engnieer",
+			"courses": [
+				"C",
+				"C#"
+			]
+		}
+	]
+}

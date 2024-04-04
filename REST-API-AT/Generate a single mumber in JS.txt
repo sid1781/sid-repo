@@ -1,0 +1,12 @@
+function GenerateRandomNumber()
+{
+   var num =Math.random()*9000
+
+             var randomSingleNumber ="KB-T"+ math.floor(num)
+           return randomSingleNumber 
+}
+
+
+var callRandomNumber = GenerateRandomNumber()
+
+cy.log(callRandomNumber )

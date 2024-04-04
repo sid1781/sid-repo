@@ -1,0 +1,45 @@
+MOM
+Revisited cant be automated 145 cases and found 
+Segregated the test cases based on the possiblity of the automation.
+Went through the cant be automated cases in deep and captured the comments.
+
+
+
+
+
+how your validating the server and client
+if you say the mocking: how your ensuring that your script will cathc the bug
+
+
+
+raghul
+sid
+
+monisha
+Mastan
+Roja
+
+
+Tasmiya
+Sandhya
+Adarsh
+Jaiganesh
+
+
+Madhavi
+Udemy Performance testing--Linked In
+70*4=280
+
+@Nagaraj O Chindi @Vikrant Choudhary As per current jira Business cases status (UAT):Total: 188.Automation Execution: 73.Manual Execution: 115.
+
+
+sharat
+sakthi
+kishore
+vignesh
+sagar
+
+Business cases automation completed(UAT). Sanity cases automation is in progress.
+
+
+

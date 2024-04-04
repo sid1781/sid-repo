@@ -1,0 +1,5 @@
+BDD-Behaviou Driven Development
+
+Cucumber--FrameWork
+
+RestAssured-It is an api/library which is used to test the rest api's.

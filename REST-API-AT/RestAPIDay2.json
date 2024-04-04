@@ -1,0 +1,133 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "smith",
+      "location": "Canada",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C#"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nagesh",
+      "location": "London",
+      "phone": "123478",
+      "courses": [
+        "C++",
+        "Pyhton"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Nagesh",
+      "location": "London",
+      "phone": "123489",
+      "courses": [
+        "C",
+        "C#"
+      ]
+    },
+    {
+      "courses": [
+        "c",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France",
+      "id": 4
+    },
+    {
+      "courses": [
+        "c",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France",
+      "id": 5
+    },
+    {
+      "courses": [
+        "c",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France",
+      "id": 6
+    },
+    {
+      "courses": [
+        "c",
+        "C++"
+      ],
+      "phone": "123456",
+      "name": "Scott",
+      "location": "France",
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "empty": false,
+      "id": 9
+    },
+    {
+      "empty": false,
+      "id": 10
+    },
+    {
+      "empty": false,
+      "id": 11
+    },
+    {
+      "empty": false,
+      "id": 12
+    },
+    {
+      "courses": [
+        "c",
+        "c++"
+      ],
+      "phone": "123456",
+      "name": "Scotty",
+      "location": "France",
+      "id": 13
+    },
+    {
+      "name": "scott",
+      "location": "NEWYORK",
+      "phone": "123456",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "id": 14
+    },
+    {
+      "courses": [
+        "C",
+        "C#"
+      ],
+      "phone": "123456",
+      "name": "smith",
+      "location": "Canada",
+      "id": 15
+    },
+    {
+      "courses": [
+        "C",
+        "C#"
+      ],
+      "phone": "123456",
+      "name": "smith",
+      "location": "Canada",
+      "id": 16
+    }
+  ]
+}

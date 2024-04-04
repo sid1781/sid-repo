@@ -1,0 +1,29 @@
+{
+	"Books": [{
+		"BookTitle": [{
+				"author": "Siddeshwar",
+				"catagory": "reference",
+				"price": 150.5,
+				"title": "My Life your Rules"
+			},
+			{
+				"author": "Nags",
+				"catagory": "reference",
+				"price": 140.5,
+				"title": "Your Life your Rules"
+			},
+			{
+				"author": "Dattu",
+				"catagory": "reference",
+				"price": 130.5,
+				"title": "Lover Boy"
+			},
+			{
+				"author": "Bharat",
+				"catagory": "reference",
+				"price": 120.5,
+				"title": "Broke up seens"
+			}
+		]
+	}]
+}

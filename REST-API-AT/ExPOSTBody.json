@@ -1,0 +1,9 @@
+ {
+ 	"name": "smith",
+ 	"location": "Canada",
+ 	"phone": "123456",
+ 	"courses": [
+ 		"C",
+ 		"C#"
+ 	]
+ }

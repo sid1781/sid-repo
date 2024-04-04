@@ -1,0 +1,306 @@
+{
+	"msg": "success",
+	"model": {
+		"gateways": [{
+			"channels": null,
+			"disableUpiVpa": 0,
+			"img": "https://ik.imagekit.io/krazybee/seamlesspg/ic_upi_4tZVhhOgMz.svg",
+			"maxAmount": "100000",
+			"mode": "UPI",
+			"modeEnabled": 1,
+			"payment": {
+				"GstConvinienceFee": "0",
+				"GstPerc": "18",
+				"amount": "531",
+				"convinienceFee": "0",
+				"feeAmount": "0",
+				"feeType": "n",
+				"totalAmount": "531"
+			},
+			"paymentMethod": "UPI",
+			"paymentString": {
+				"convFeeDisclaimer": "{\"feeoption\":{\"en\":\"\",\"hi\":\"\"},\"feestring\":{\"en\":\"\",\"hi\":\"\"}}",
+				"payBtn": "{\"en\":\"Pay with UPI\",\"hi\":\"UPI द्वारा भुगतान करें\"}",
+				"title": "{\"en\":\"UPI\",\"hi\":\"UPI\"}"
+			},
+			"pg": "razorpay",
+			"pgName": "razorpayupi",
+			"pgWarning": "",
+			"req": {
+				"amount": "53100",
+				"mode": "UPI",
+				"pgName": "razorpayupi",
+				"pgkey": 115,
+				"reqId": "0",
+				"seamless": true,
+				"selectedChannel": "",
+				"selectedMethod": "UPI"
+			}
+		}, {
+			"channels": null,
+			"img": "https://ik.imagekit.io/krazybee/seamlesspg/ic_debitcard_lM-KsMDzJD.svg",
+			"maxAmount": "1000000",
+			"mode": "DC",
+			"modeEnabled": 1,
+			"payment": {
+				"GstConvinienceFee": "0",
+				"GstPerc": "18",
+				"amount": "531",
+				"convinienceFee": "0",
+				"feeAmount": "0",
+				"feeType": "n",
+				"totalAmount": "531"
+			},
+			"paymentMethod": "DC",
+			"paymentString": {
+				"convFeeDisclaimer": "{\"feeoption\":{\"en\":\"\",\"hi\":\"\"},\"feestring\":{\"en\":\"\",\"hi\":\"\"}}",
+				"payBtn": "{\"en\":\"Pay with Debit Card\",\"hi\":\"डेबिट कार्ड द्वारा भुगतान करें\"}",
+				"title": "{\"en\":\"Debit Card\",\"hi\":\"डेबिट कार्ड\"}"
+			},
+			"pg": "payu",
+			"pgName": "payu",
+			"pgWarning": "",
+			"req": {
+				"amount": "53100",
+				"mode": "DC",
+				"pgName": "payu",
+				"pgkey": 73,
+				"reqId": "0",
+				"seamless": true,
+				"selectedChannel": "",
+				"selectedMethod": ""
+			}
+		}, {
+			"channels": [{
+				"shortName": "SBI",
+				"longName": "State bank of India",
+				"iconSmall": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_sbi_QYTsWE6u_l.svg",
+				"iconBig": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_sbi_QYTsWE6u_l.svg"
+			}, {
+				"shortName": "ICICI",
+				"longName": "ICICI Bank Ltd",
+				"iconSmall": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_icici_r4GCpsTqho.svg",
+				"iconBig": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_icici_r4GCpsTqho.svg"
+			}, {
+				"shortName": "KOTAK",
+				"longName": "Kotak Mahindra Bank Ltd",
+				"iconSmall": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_kotak_z9W1FJ1v9.svg",
+				"iconBig": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_kotak_z9W1FJ1v9.svg"
+			}, {
+				"shortName": "AXIS",
+				"longName": "Axis Bank",
+				"iconSmall": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_axis_ZLCDtJMq1n.svg",
+				"iconBig": "https://ik.imagekit.io/krazybee/seamlesspg/banks/svg_axis_ZLCDtJMq1n.svg"
+			}, {
+				"shortName": "YES",
+				"longName": "Yes Bank",
+				"iconSmall": "https://ik.imagekit.io/krazybee/seamlesspg/banks/yes_bank.svg",
+				"iconBig": ""
+			}, {
+				"shortName": "ANDB",
+				"longName": "Andhra Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "BKID",
+				"longName": "Bank Of India",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "MAHB",
+				"longName": "Bank of Maharashtra",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "CNRB",
+				"longName": "Canara Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "CBIN",
+				"longName": "Central Bank of India",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "CIUB",
+				"longName": "City Union Bank Limited",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "CSB",
+				"longName": "CSB Bank Limited",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "DCB",
+				"longName": "DCB Bank Ltd",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "DBK",
+				"longName": "Deutsche Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "DLXB",
+				"longName": "Dhanalaxmi Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "FDRL",
+				"longName": "Federal Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "IBKL",
+				"longName": "IDBI Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "IDFC",
+				"longName": "IDFC First Bank",
+				"iconSmall": "https://ik.imagekit.io/krazybee/seamlesspg/banks/idfc.svg",
+				"iconBig": ""
+			}, {
+				"shortName": "IDIB",
+				"longName": "Indian Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "IOBA",
+				"longName": "Indian Overseas Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "INDB",
+				"longName": "Indusind Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "JSBNB",
+				"longName": "Janata Sahakari Bank Pune",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "KVBL",
+				"longName": "Karur Vysya Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "LAVB",
+				"longName": "The Lakshmi Vilas Bank Ltd.",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "LAVBC",
+				"longName": "Lakshmi Vilas Bank - Corporate Netbanking",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "TBON",
+				"longName": "Nainital Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "ORBC",
+				"longName": "Oriental Bank of Commerce",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "PUNB",
+				"longName": "Punjab National Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "PUNBC",
+				"longName": "Punjab National Bank - Corporate Banking",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "SRCB",
+				"longName": "Saraswat Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "SIBL",
+				"longName": "South Indian Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "SVC",
+				"longName": "SVC Cooperative Bank Ltd",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "SYNB",
+				"longName": "Syndicate bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "TMBL",
+				"longName": "Tamilnad Mercantile Bank Ltd.",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "COSB",
+				"longName": "THE COSMOS CO-OPERATIVE BANK LTD",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "JAKA",
+				"longName": "The Jammu And Kashmir Bank Ltd",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "UCBA",
+				"longName": "UCO Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "UTBI",
+				"longName": "United Bank of India",
+				"iconSmall": "",
+				"iconBig": ""
+			}, {
+				"shortName": "APB",
+				"longName": "Airtel Payments Bank",
+				"iconSmall": "",
+				"iconBig": ""
+			}],
+			"img": "https://ik.imagekit.io/krazybee/seamlesspg/ic-netbank_M7Bj_EjQdy.svg",
+			"maxAmount": "1000000",
+			"mode": "NB",
+			"modeEnabled": 1,
+			"payment": {
+				"GstConvinienceFee": "0",
+				"GstPerc": "18",
+				"amount": "531",
+				"convinienceFee": "0",
+				"feeAmount": "0",
+				"feeType": "n",
+				"totalAmount": "531"
+			},
+			"paymentMethod": "NB",
+			"paymentString": {
+				"convFeeDisclaimer": "{\"feeoption\":{\"en\":\"\",\"hi\":\"\"},\"feestring\":{\"en\":\"\",\"hi\":\"\"}}",
+				"payBtn": "{\"en\":\"Pay with Netbanking\",\"hi\":\"नेटबैंकिंग द्वारा भुगतान करें\"}",
+				"title": "{\"en\":\"NetBanking\",\"hi\":\"नेटबैंकिंग\"}"
+			},
+			"pg": "payu",
+			"pgName": "payu",
+			"pgWarning": "",
+			"req": {
+				"amount": "53100",
+				"mode": "NB",
+				"pgName": "payu",
+				"pgkey": 73,
+				"reqId": "0",
+				"seamless": true,
+				"selectedChannel": "",
+				"selectedMethod": ""
+			}
+		}],
+		"isSeamless": true,
+		"shortCode": ""
+	}
+}
